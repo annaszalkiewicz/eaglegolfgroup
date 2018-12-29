@@ -11,7 +11,16 @@ class Header extends Component {
         </div>
         <div className="nav">
           <i className="material-icons hamburger-menu">menu</i>
-          
+          <nav className="nav-main">
+            <ul>
+              <li className="nav-item">Home</li>
+              <li className="nav-item">Our Ethos</li>
+              <li className="nav-item">Events</li>
+              <li className="nav-item">Testimonials</li>
+              <li className="nav-item">Our Partners</li>
+              <li className="nav-item">Contact Us</li>
+            </ul>
+          </nav>
         </div>
       </header>
     );

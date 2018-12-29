@@ -59,3 +59,11 @@ nav {
   position: absolute;
   display: none;
 }
+
+.nav-main {
+  ul {
+    li {
+      list-style-type: none;
+    }
+  }
+}
