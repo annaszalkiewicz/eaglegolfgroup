@@ -3,6 +3,20 @@ import Logo from "../img/logo-white.svg";
 
 class Header extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false
+    }
+    this.onClickHandler = this.onClickHandler.bind(this);
+  }
+  
+
+  onClickHandler = () => {
+    const { isOpen } = this.state;
+    this.setState({isOpen: (!isOpen) ? true : false});    
+  }
+
   render() {
 
     return (
@@ -12,7 +26,10 @@ class Header extends Component {
           <h1>Eagle Golf Group</h1>
         </div>
         <div className="nav">
-          <i className="material-icons hamburger-menu">menu</i>
+          <i
+            className="material-icons hamburger-menu"
+            onClick={this.onClickHandler}
+          >menu</i>
           <nav className="nav-main">
             <ul>
               <li>Home</li>
