@@ -113,3 +113,31 @@ header {
   width: 100%;
   overflow-x: hidden;
 }
+
+// FOOTER
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1em;
+  text-align: center;
+  flex-direction: column;
+
+  .copyright {
+    width: 100%;
+  }
+  .credit {
+    width: 100%;
+    
+    p {
+      a {
+        img {
+          height: 20px;
+        }
+      }
+    }
+  }
+
+}
