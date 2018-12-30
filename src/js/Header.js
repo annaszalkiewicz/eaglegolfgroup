@@ -13,8 +13,8 @@ class Header extends Component {
   onClickHandler = () => {
     const { isOpen } = this.state;
     this.setState({ isOpen: !isOpen ? true : false });
-  };
-
+  }
+  
   render() {
     const { isOpen } = this.state;
 
