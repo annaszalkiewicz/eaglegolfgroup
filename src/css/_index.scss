@@ -13,9 +13,10 @@ $heading-font: 'Montserrat Alternates', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-body {
+html, body, #root, .App {
   font-family: -apple-system, BlinkMacSystemFont, "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,6 +25,7 @@ body {
   height: 100%;
   color: $black-color;
   background-color: #000;
+  overflow-x: hidden;
 }
 
 code {
@@ -69,6 +71,7 @@ header {
   display: block;
   text-align: right;
   right: 0;
+  transform: translateX(1000px);
 
   ul {
     
@@ -98,4 +101,8 @@ header {
       border-top: solid 9px $color-6;
     }
   }
+}
+.open {
+  transform: translateX(0);
+  transition: transform 1s ease;
 }
