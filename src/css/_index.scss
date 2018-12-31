@@ -27,11 +27,23 @@ html, body, #root, .App {
   overflow-x: hidden;
 }
 
-body {
+.slider-container {
   background-image: url('../img/golf-carousel-640.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  animation-name: scale;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
 }
 
 code {
