@@ -130,6 +130,9 @@ class Home extends Component {
                 <i class="material-icons right-arrow">keyboard_arrow_right</i>
               </div>
             </div>
+            <button className="grid-item testimonials-button">
+              <a href="#">Read more testimonials</a>
+            </button>
           </div>
         </main>
         <Footer />
