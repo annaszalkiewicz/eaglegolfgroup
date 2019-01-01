@@ -118,6 +118,18 @@ class Home extends Component {
             <header className="grid-item section-header testimonials-header">
               <h2>Testimonials</h2>
             </header>
+            <div className="grid-item testimonials-item-1">
+              <div className="left">
+                <i class="material-icons left-arrow">keyboard_arrow_left</i>
+              </div>
+              <div className="testimonials-container">
+                <i class="material-icons quote-icon">format_quote</i>
+                <p>Just a brief note to thank you for a wonderful few days investigating what Cyprus has to offer golfers. I was not only enormously impressed with what I saw but also with the careful and well organised arrangements you made. It must have taken a huge effort to put together such a hectic itinerary but it was well worth it as it s important to see as much as possible in a short space of time...</p>
+              </div>
+              <div className="right">
+                <i class="material-icons right-arrow">keyboard_arrow_right</i>
+              </div>
+            </div>
           </div>
         </main>
         <Footer />
