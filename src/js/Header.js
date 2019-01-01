@@ -19,7 +19,7 @@ class Header extends Component {
     const { isOpen } = this.state;
 
     return (
-      <header>
+      <header className="header-main">
         <div className="logo">
           <img src={Logo} alt="Eagle Golf Group" />
           <h1>Eagle Golf Group</h1>

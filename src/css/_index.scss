@@ -53,7 +53,7 @@ code {
 
 // HEADER
 
-header {
+.header-main {
   width: 100%;
   color: $white-color;
   display: flex;
@@ -143,13 +143,12 @@ main {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 300px 2fr repeat(10, 1fr) 2fr repeat(4, 1fr) 2fr repeat(6, 1fr);
-  grid-auto-rows: minmax(300px, 600px);
+  grid-template-rows: 300px 550px repeat(10, 300px) 2fr repeat(4, 1fr) 2fr repeat(6, 1fr);
+  grid-auto-rows: min(300px);
   grid-template-areas: 
     "homeLogo"
-    "home-intro"
-    "home-intro"
-    "goals-header";
+    "homeIntro"
+    "goalsHeader";
   grid-gap: 1em;
 }
 
@@ -180,7 +179,7 @@ main {
   }
 }
 .home-intro {
-  grid-area: home-intro;
+  grid-area: homeIntro;
   padding: 2em;
   p:nth-last-of-type(1) {
     margin-top: 2em;
@@ -188,14 +187,15 @@ main {
 }
 .goals-header {
   background-color: $color-2;
-  grid-area: goals-header;
+  grid-area: goalsHeader;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section-header {
   color: $white-color;
-  h2 {
-    margin-left: 50%;
-    transform: translateX(-50%);
-  }
+  font-size: 2em;
+  font-family: $heading-font;
 }
 
 // CAROUSEL 
