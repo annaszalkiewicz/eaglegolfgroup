@@ -142,8 +142,8 @@ main {
   width: 320px;
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: 300px 550px repeat(10, 300px) 2fr repeat(4, 1fr) 2fr repeat(6, 1fr);
+  grid-template-columns: 300px;
+  grid-template-rows: 300px 550px repeat(14, 300px) 2fr repeat(4, 1fr) 2fr repeat(6, 1fr);
   grid-auto-rows: min(300px);
   grid-template-areas: 
     "homeLogo"
@@ -157,7 +157,11 @@ main {
     "goalsItem6"
     "goalsItem7"
     "goalsItem8"
-    "eventsHeader";
+    "eventsHeader"
+    "eventItem1"
+    "eventItem2"
+    "eventItem3"
+    "eventItem4";
   grid-gap: 1em;
 }
 
@@ -225,13 +229,13 @@ main {
 }
 .goals-button {
   background: $color-7;
-  border: solid 10px $color-4;
+  border: solid 10px $color-2;
   text-align: center;
   font-family: $heading-font;
   font-size: 2.5em;
   font-weight: bold;
   a {
-    color: $color-4;
+    color: $color-2;
     text-decoration: none;
   }
 }
@@ -243,6 +247,38 @@ main {
     margin-top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+}
+@for $i from 1 through 4 {
+  .event-item-#{$i} {
+    grid-area: eventItem#{$i};
+  }
+}
+.event-list {
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  h3, p {
+    padding: 1em;
+  }
+  img {
+    width: 100%;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+  }
+}
+.event-button {
+  text-align: center;
+  font-family: $heading-font;
+  font-size: 2.5em;
+  font-weight: bold;
+  border: solid 10px $color-3;
+  a {
+    text-decoration: none;
+    color: $color-3;
   }
 }
 
