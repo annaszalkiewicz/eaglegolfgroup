@@ -168,12 +168,15 @@ main {
     "partnersItem1"
     "partnersItem2"
     "partnersItem3"
-    "partnersItem4";
+    "partnersItem4"
+    "contactItem1"
+    "contactItem2"
+    "contactItem3"
+    "contactItem4";
   grid-gap: 1em;
 }
 
 .grid-item {
-  margin: 0 10px;
   box-shadow: 0 0 5px #b7b7b7;
   text-align: justify;
   background-color: $color-7;
@@ -217,6 +220,9 @@ main {
   font-size: 2em;
   font-family: $heading-font;
 }
+
+// GOALS SECTION ON HOMEPAGE 
+
 @for $i from 1 through 8 {
   .goals-item-#{$i} {
     grid-area: goalsItem#{$i};
@@ -246,6 +252,9 @@ main {
     text-decoration: none;
   }
 }
+
+// EVENTS SECTION ON HOMEPAGE
+
 .events-header {
   grid-area: eventsHeader;
   background-color: $color-3;
@@ -288,6 +297,9 @@ main {
     color: $color-3;
   }
 }
+
+// TESTIMONIALS SECTION ON HOMEPAGE
+
 .testimonials-header {
   grid-area: testimonialsHeader;
   background-color: $color-4;
@@ -330,6 +342,8 @@ main {
   }
 }
 
+// PARTNERS SECTION ON HOMEPAGE
+
 @for $i from 1 through 4 {
   .partners-item-#{$i} {
     grid-area: partnersItem#{$i};
@@ -362,6 +376,21 @@ main {
     color: $color-5;
     text-decoration: none;
   }
+}
+
+// CONTACT SECTION ON HOMEPAGE
+
+@for $i from 1 through 3 {
+  .contact-item-#{$i} {
+    grid-area: contactItem#{$i};
+  }
+}
+.contact-item-1 {
+  background-color: $color-6;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // CAROUSEL 
