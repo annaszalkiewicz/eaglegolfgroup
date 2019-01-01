@@ -28,14 +28,24 @@ class Home extends Component {
             </div>
             <div className="grid-item home-intro">
               <p>
-                Eagle Golf Group offers a unique service to our clients by introducing the full spectrum of consultancy services for the construction of international golf resorts, from initial concept
-                to the delivery of a championship-standard golf resort. The construction, promotion and management of 5 star luxury hotels complement our unique business from an initial feasibility study to the completed golf course.
+                Eagle Golf Group offers a unique service to our clients by
+                introducing the full spectrum of consultancy services for the
+                construction of international golf resorts, from initial concept
+                to the delivery of a championship-standard golf resort. The
+                construction, promotion and management of 5 star luxury hotels
+                complement our unique business from an initial feasibility study
+                to the completed golf course.
               </p>
               <p>
-                Our team of professional Golf Tourism Advisors have worked at director level in the travel promotion industry for over 50 years. We conduct regular road show events with our clients,
+                Our team of professional Golf Tourism Advisors have worked at
+                director level in the travel promotion industry for over 50
+                years. We conduct regular road show events with our clients,
                 promoting new Golf Resort destinations.
               </p>
             </div>
+            <header id="goals"  className="grid-item goals-header section-header">
+              <h2>Our Goals</h2>
+            </header>
           </div>
         </main>
         <Footer />
