@@ -12,6 +12,8 @@ import Tv from "../img/tv-icon.svg";
 import World from "../img/world-icon.svg";
 import Sos from "../img/sos.png";
 import Olympics from "../img/special-olympics.png";
+import Idg from "../img/idg.png";
+import Play from "../img/playonpro.png";
 
 class Home extends Component {
   render() {
@@ -103,14 +105,15 @@ class Home extends Component {
               <hr />
               <h3>30 May - 02 June 2019</h3>
               <p>
-                Tirana Charity Football Stadium (Qemal Stefa) &amp; Hayat Regency Hotel
+                Tirana Charity Football Stadium (Qemal Stefa) &amp; Hayat
+                Regency Hotel
               </p>
             </div>
             <div className="grid-item event-list event-item-2">
-              <img src={Sos} alt="SOS Children's Villages"/>
+              <img src={Sos} alt="SOS Children's Villages" />
             </div>
             <div className="grid-item event-list event-item-3">
-              <img src={Olympics} alt="Special Olympics Albania"/>
+              <img src={Olympics} alt="Special Olympics Albania" />
             </div>
             <button className="grid-item event-button event-item-4">
               <a href="#">Learn more about events</a>
@@ -124,7 +127,15 @@ class Home extends Component {
               </div>
               <div className="testimonials-container">
                 <i class="material-icons quote-icon">format_quote</i>
-                <p>Just a brief note to thank you for a wonderful few days investigating what Cyprus has to offer golfers. I was not only enormously impressed with what I saw but also with the careful and well organised arrangements you made. It must have taken a huge effort to put together such a hectic itinerary but it was well worth it as it s important to see as much as possible in a short space of time...</p>
+                <p>
+                  Just a brief note to thank you for a wonderful few days
+                  investigating what Cyprus has to offer golfers. I was not only
+                  enormously impressed with what I saw but also with the careful
+                  and well organised arrangements you made. It must have taken a
+                  huge effort to put together such a hectic itinerary but it was
+                  well worth it as it s important to see as much as possible in
+                  a short space of time...
+                </p>
               </div>
               <div className="right">
                 <i class="material-icons right-arrow">keyboard_arrow_right</i>
@@ -132,10 +143,29 @@ class Home extends Component {
             </div>
             <button className="grid-item testimonials-button">
               <a href="#">Read more testimonials</a>
-            </button>            
+            </button>
             <header className="grid-item section-header partners-item-1">
               <h2>Our Partners</h2>
             </header>
+            <div className="grid-item partners-item-2">
+              <a
+                href="http://www.internationaldesigngroup.co.uk/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Idg} alt="International Design Group" />
+              </a>
+            </div>
+            <div className="grid-item partners-item-3">
+              <a
+                href="http://playonpro.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Play} alt="International Design Group" />
+              </a>
+            </div>
+            <button className="grid-item partners-item-4" />
           </div>
         </main>
         <Footer />
