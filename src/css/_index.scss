@@ -155,7 +155,9 @@ main {
     "goalsItem4"
     "goalsItem5"
     "goalsItem6"
-    "goalsItem7";
+    "goalsItem7"
+    "goalsItem8"
+    "eventsHeader";
   grid-gap: 1em;
 }
 
@@ -204,7 +206,7 @@ main {
   font-size: 2em;
   font-family: $heading-font;
 }
-@for $i from 1 through 7 {
+@for $i from 1 through 8 {
   .goals-item-#{$i} {
     grid-area: goalsItem#{$i};
   }
@@ -219,6 +221,28 @@ main {
   }
   p {
     margin-top: 1em;
+  }
+}
+.goals-button {
+  background: $color-7;
+  border: solid 10px $color-4;
+  text-align: center;
+  font-family: $heading-font;
+  font-size: 2.5em;
+  font-weight: bold;
+  a {
+    color: $color-4;
+    text-decoration: none;
+  }
+}
+.events-header {
+  grid-area: eventsHeader;
+  background-color: $color-3;
+  h2 {
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 }
 
