@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.019 150.019">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #273f29;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #273f29;
+        stroke-miterlimit: 10;
+        stroke-width: 10px;
+      }
+    </style>
+  </defs>
+  <g id="football_icon" data-name="football=icon" transform="translate(-48.918 -25.4)">
+    <g id="Layer_1" transform="translate(52.8 30.944)">
+      <g id="Group_12" data-name="Group 12" transform="translate(0 0)">
+        <path id="Path_29" data-name="Path 29" class="cls-1" d="M355.9,346.615l9.644,29.476,29.911.2,8.852-29.352L379.863,328.6Z" transform="translate(-308.828 -282.833)"/>
+        <path id="Path_30" data-name="Path 30" class="cls-1" d="M402.584,54.369l-9.4-20.469H362.8l-9.4,20.469L377.984,67.01Z" transform="translate(-306.717 -33.9)"/>
+        <path id="Path_31" data-name="Path 31" class="cls-1" d="M777.4,269.559,756.386,264.9,750.5,291.752,767.847,313l16.633-13.713Z" transform="translate(-642.147 -229.025)"/>
+        <path id="Path_32" data-name="Path 32" class="cls-1" d="M567.369,682.367,552.6,705.088l17.58,10.157,25.64-16.415L594.081,678.5Z" transform="translate(-474.981 -578.393)"/>
+        <path id="Path_33" data-name="Path 33" class="cls-1" d="M81.08,269.4,59.8,274.043l-7,29.74,16.943,13.744,17.471-21.245Z" transform="translate(-52.8 -232.827)"/>
+        <path id="Path_34" data-name="Path 34" class="cls-1" d="M184.794,656.4,181.3,676.527,205.434,695.1l18.4-8.65-12.75-23.932Z" transform="translate(-161.344 -559.725)"/>
+      </g>
+    </g>
+    <g id="Layer_2" transform="translate(53.918 30.4)">
+      <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-2" cx="70.01" cy="70.01" r="70.01" transform="translate(0 0)"/>
+    </g>
+  </g>
+</svg>

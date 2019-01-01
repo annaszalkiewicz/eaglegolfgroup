@@ -1,0 +1,15 @@
+<svg id="tv-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #273f29;
+      }
+    </style>
+  </defs>
+  <path id="Path_23" data-name="Path 23" class="cls-1" d="M0,0H150V150H0Z"/>
+  <path id="Path_24" data-name="Path 24" class="cls-2" d="M135.545,3H14.455C7.055,3,1,10.2,1,19v96c0,8.8,6.055,16,13.455,16H48.091v16h53.818V131h33.636c7.4,0,13.387-7.2,13.387-16L149,19C149,10.2,142.945,3,135.545,3Zm0,112H14.455V19H135.545Z"/>
+</svg>

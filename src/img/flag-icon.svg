@@ -1,0 +1,15 @@
+<svg id="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #273f29;
+      }
+    </style>
+  </defs>
+  <path id="Path_35" data-name="Path 35" class="cls-1" d="M0,0H150V150H0Z"/>
+  <path id="Path_36" data-name="Path 36" class="cls-2" d="M93.36,20.824,89.6,4H5V147H23.8V88.118H76.44l3.76,16.824H146V20.824Z" transform="translate(0 0)"/>
+</svg>

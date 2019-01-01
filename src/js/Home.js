@@ -3,6 +3,13 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Carousel from "./Carousel";
 import Logo from "../img/logo-white.svg";
+import Charity from "../img/charity-icon.svg";
+import Flag from "../img/flag-icon.svg";
+import Football from "../img/football-icon.svg";
+import Golf from "../img/golf-icon.svg";
+import Dolar from "../img/monetization-icon.svg";
+import Tv from "../img/tv-icon.svg";
+import World from "../img/world-icon.svg";
 
 class Home extends Component {
   render() {
@@ -46,6 +53,34 @@ class Home extends Component {
             <header id="goals"  className="grid-item goals-header section-header">
               <h2>Our Goals</h2>
             </header>
+            <div className="grid-item goals-list goals-item-1">
+              <img src={Charity} alt="Charity"/>
+              <p>Organizing charity sporting events to support charities in various countries</p>
+            </div>
+            <div className="grid-item goals-list goals-item-2">
+              <img src={Dolar} alt="Charity"/>
+              <p>Raising funds for charities</p>
+            </div>
+            <div className="grid-item goals-list goals-item-3">
+              <img src={Golf} alt="Charity"/>
+              <p>Supporting incoming tourism and golf awareness</p>
+            </div>
+            <div className="grid-item goals-list goals-item-4">
+              <img src={Flag} alt="Charity"/>
+              <p>Working in partnership with overseas governements</p>
+            </div>
+            <div className="grid-item goals-list goals-item-5">
+              <img src={World} alt="Charity"/>
+              <p>Raising the profile of the country</p>
+            </div>
+            <div className="grid-item goals-list goals-item-6">
+              <img src={Football} alt="Charity"/>
+              <p>Partnership with The England Legends Football Team</p>
+            </div>
+            <div className="grid-item goals-list goals-item-7">
+              <img src={Tv} alt="Charity"/>
+              <p>Associating with National Media and TV companies to maximise the event we are organizing</p>
+            </div>
           </div>
         </main>
         <Footer />

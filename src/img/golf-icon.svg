@@ -1,0 +1,16 @@
+<svg id="golf-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #273f29;
+      }
+    </style>
+  </defs>
+  <path id="Path_27" data-name="Path 27" class="cls-1" d="M0,0H150V150H0Z"/>
+  <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-2" cx="11.354" cy="11.354" r="11.354" transform="translate(104.583 104.583)"/>
+  <path id="Path_28" data-name="Path 28" class="cls-2" d="M102.4,25.466,41.847,2V109.75H26.708V99.394C13.159,101.489,4,105.32,4,109.75c0,6.585,20.362,11.972,45.417,11.972s45.417-5.387,45.417-11.972c0-5.926-16.35-10.835-37.847-11.793V43.783L102.4,25.466Z" transform="translate(14.763 13.139)"/>
+</svg>
