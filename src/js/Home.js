@@ -4,7 +4,6 @@ import Footer from "./Footer";
 import Carousel from "./Carousel";
 import Logo from "../img/logo-white.svg";
 
-
 class Home extends Component {
   render() {
     return (
@@ -15,12 +14,19 @@ class Home extends Component {
           <h2>
             A bird's eye view on the world of celebrity charity sporting events
           </h2>
-          <button className="btn-primary">Contact Us <i className="material-icons btn-carousel">send</i></button>
+          <button className="btn-primary">
+            Contact Us <i className="material-icons btn-carousel">send</i>
+          </button>
         </div>
         <main>
           <div className="home-logo">
-           <img src={Logo} alt="Eagle Golf Group logo"/>
-           <h2>Eagle Golf Group</h2>
+            <div className="home-container">
+              <img src={Logo} alt="Eagle Golf Group logo" />
+              <h2>Eagle Golf Group</h2>
+            </div>
+          </div>
+          <div className="home-intro">
+            <p />
           </div>
         </main>
         <Footer />
