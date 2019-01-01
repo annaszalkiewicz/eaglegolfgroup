@@ -132,7 +132,10 @@ class Home extends Component {
             </div>
             <button className="grid-item testimonials-button">
               <a href="#">Read more testimonials</a>
-            </button>
+            </button>            
+            <header className="grid-item section-header partners-item-1">
+              <h2>Our Partners</h2>
+            </header>
           </div>
         </main>
         <Footer />
