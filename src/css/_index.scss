@@ -162,7 +162,8 @@ main {
     "eventItem2"
     "eventItem3"
     "eventItem4"
-    "testimonialsHeader";
+    "testimonialsHeader"
+    "testimonialsItem1";
   grid-gap: 1em;
 }
 
@@ -290,6 +291,26 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.testimonials-item-1 {
+  grid-area: testimonialsItem1;
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center; 
+}
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  text-align: center;
+  p {
+    padding: 1em;
+    font-size: 0.8em;
+  }
+}
+.quote-icon, .left-arrow, .right-arrow {
+  font-size: 3em;
 }
 
 // CAROUSEL 
