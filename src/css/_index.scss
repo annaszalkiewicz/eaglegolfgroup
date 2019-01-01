@@ -148,7 +148,8 @@ main {
   grid-template-areas: 
     "homeLogo"
     "home-intro"
-    "home-intro";
+    "home-intro"
+    "goals-header";
   grid-gap: 1em;
 }
 
@@ -156,6 +157,7 @@ main {
   margin: 0 10px;
   box-shadow: 0 0 5px #b7b7b7;
   text-align: justify;
+  background-color: $color-7;
 }
 .home-logo {
   grid-area: homeLogo;
@@ -179,10 +181,20 @@ main {
 }
 .home-intro {
   grid-area: home-intro;
-  background-color: $color-7;
   padding: 2em;
   p:nth-last-of-type(1) {
     margin-top: 2em;
+  }
+}
+.goals-header {
+  background-color: $color-2;
+  grid-area: goals-header;
+}
+.section-header {
+  color: $white-color;
+  h2 {
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 }
 
