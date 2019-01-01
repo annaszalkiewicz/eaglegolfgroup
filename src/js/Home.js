@@ -165,7 +165,9 @@ class Home extends Component {
                 <img src={Play} alt="International Design Group" />
               </a>
             </div>
-            <button className="grid-item partners-item-4" />
+            <button className="grid-item partners-item-4 partners-button">
+             <a href="#">Learn more about our partners</a>
+            </button>
           </div>
         </main>
         <Footer />
