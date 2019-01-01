@@ -143,7 +143,7 @@ main {
   display: grid;
   justify-content: center;
   grid-template-columns: 300px;
-  grid-template-rows: 300px 550px repeat(17, 300px);
+  grid-template-rows: 300px 550px repeat(24, 300px);
   grid-auto-rows: min(300px);
   grid-template-areas: 
     "homeLogo"
@@ -163,7 +163,8 @@ main {
     "eventItem3"
     "eventItem4"
     "testimonialsHeader"
-    "testimonialsItem1";
+    "testimonialsItem1"
+    "testimonialsButton";
   grid-gap: 1em;
 }
 
@@ -311,6 +312,18 @@ main {
 }
 .quote-icon, .left-arrow, .right-arrow {
   font-size: 3em;
+}
+
+.testimonials-button {
+  grid-area: testimonialsButton;
+  border: solid 10px $color-4;
+  background-color: $color-7;
+  text-align: center;
+  font-size: 2.5em;
+  a {
+    color: $color-4;
+    text-decoration: none;
+  }
 }
 
 // CAROUSEL 
