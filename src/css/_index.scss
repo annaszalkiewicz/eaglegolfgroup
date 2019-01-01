@@ -392,6 +392,26 @@ main {
   justify-content: center;
   align-items: center;
 }
+.contact-item-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  p {
+    margin: 1em 0 2em 0;
+  }
+  h3 {
+    margin: 1em 0;
+  }
+  .contact-telephone {
+    margin-top: 1em;
+  }
+}
+.contact-telephone, .contact-email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+}
 
 // CAROUSEL 
 
