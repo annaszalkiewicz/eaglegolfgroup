@@ -81,6 +81,12 @@ class Home extends Component {
               <img src={Tv} alt="Charity"/>
               <p>Associating with National Media and TV companies to maximise the event we are organizing</p>
             </div>
+            <button className="grid-item goals-button goals-item-8">
+              <a href="#">Learn more about us</a>
+            </button>
+            <header className="grid-item section-header events-header">
+              <h2>Next Event</h2>
+            </header>
           </div>
         </main>
         <Footer />
