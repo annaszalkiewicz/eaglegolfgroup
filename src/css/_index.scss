@@ -148,7 +148,14 @@ main {
   grid-template-areas: 
     "homeLogo"
     "homeIntro"
-    "goalsHeader";
+    "goalsHeader"
+    "goalsItem1"
+    "goalsItem2"
+    "goalsItem3"
+    "goalsItem4"
+    "goalsItem5"
+    "goalsItem6"
+    "goalsItem7";
   grid-gap: 1em;
 }
 
@@ -196,6 +203,23 @@ main {
   color: $white-color;
   font-size: 2em;
   font-family: $heading-font;
+}
+@for $i from 1 through 7 {
+  .goals-item-#{$i} {
+    grid-area: goalsItem#{$i};
+  }
+}
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  text-align: center;
+  img {
+    height: 11em;
+  }
+  p {
+    margin-top: 1em;
+  }
 }
 
 // CAROUSEL 
