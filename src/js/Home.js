@@ -19,14 +19,23 @@ class Home extends Component {
           </button>
         </div>
         <main>
-          <div className="home-logo">
-            <div className="home-container">
-              <img src={Logo} alt="Eagle Golf Group logo" />
-              <h2>Eagle Golf Group</h2>
+          <div className="grid-container">
+            <div className="grid-item home-logo">
+              <div className="home-container">
+                <img src={Logo} alt="Eagle Golf Group logo" />
+                <h2>Eagle Golf Group</h2>
+              </div>
             </div>
-          </div>
-          <div className="home-intro">
-            <p />
+            <div className="grid-item home-intro">
+              <p>
+                Eagle Golf Group offers a unique service to our clients by introducing the full spectrum of consultancy services for the construction of international golf resorts, from initial concept
+                to the delivery of a championship-standard golf resort. The construction, promotion and management of 5 star luxury hotels complement our unique business from an initial feasibility study to the completed golf course.
+              </p>
+              <p>
+                Our team of professional Golf Tourism Advisors have worked at director level in the travel promotion industry for over 50 years. We conduct regular road show events with our clients,
+                promoting new Golf Resort destinations.
+              </p>
+            </div>
           </div>
         </main>
         <Footer />
