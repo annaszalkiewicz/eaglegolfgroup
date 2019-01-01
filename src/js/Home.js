@@ -168,6 +168,10 @@ class Home extends Component {
             <button className="grid-item partners-item-4 partners-button">
              <a href="#">Learn more about our partners</a>
             </button>
+            <header className="grid-item section-header contact-item-1">
+              <h2>Contact Us</h2>
+            </header>
+        
           </div>
         </main>
         <Footer />
