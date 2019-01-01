@@ -115,6 +115,9 @@ class Home extends Component {
             <button className="grid-item event-button event-item-4">
               <a href="#">Learn more about events</a>
             </button>
+            <header className="grid-item section-header testimonials-header">
+              <h2>Testimonials</h2>
+            </header>
           </div>
         </main>
         <Footer />
