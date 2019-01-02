@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./css/_index.scss";
+import "./css/_responsive.scss";
 import App from "./js/App";
 import * as serviceWorker from "./serviceWorker";
 
