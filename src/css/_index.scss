@@ -91,6 +91,8 @@ code {
   text-align: right;
   right: 0;
   transform: translateX(1000px);
+  background-color: rgba(0,0,0,0.8);
+  z-index: 10000;
     
     a {
       cursor: pointer;
@@ -437,6 +439,7 @@ main {
   top: 0;
   left: 0;
   z-index: -1;
+  overflow: hidden;
 }
 .slider-container {
   width: 100%;
