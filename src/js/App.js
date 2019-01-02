@@ -10,7 +10,9 @@ import Partners from "./Partners";
 import Contact from "./Contact";
 
 class App extends Component {
+
   render() {
+
     return (
       <div className="App">
         <Header />

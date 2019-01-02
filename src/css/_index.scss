@@ -54,7 +54,11 @@ code {
 // HEADER
 
 .header-main {
-  width: 100%;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  overflow: hidden;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
   color: $white-color;
   display: flex;
   justify-content: space-between;
@@ -90,7 +94,8 @@ code {
   flex-direction: column;
   text-align: right;
   right: 0;
-  transform: translateX(1000px);
+  top: 13%;
+  transform: translateX(200px);
   background-color: rgba(0,0,0,0.8);
   z-index: 10000;
     
@@ -135,7 +140,7 @@ code {
 
 main {
   width: 100%;
-  margin: 80vh auto 0 auto;
+  margin: 102vh auto 0 auto;
 }
 
 .grid-container {

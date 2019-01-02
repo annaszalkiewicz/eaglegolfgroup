@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
 import Carousel from "./Carousel";
 import Logo from "../img/logo-white.svg";
 import Charity from "../img/charity-icon.svg";
@@ -123,10 +121,10 @@ class Home extends Component {
             </header>
             <div className="grid-item testimonials-item-1">
               <div className="left">
-                <i class="material-icons left-arrow">keyboard_arrow_left</i>
+                <i className="material-icons left-arrow">keyboard_arrow_left</i>
               </div>
               <div className="testimonials-container">
-                <i class="material-icons quote-icon">format_quote</i>
+                <i className="material-icons quote-icon">format_quote</i>
                 <p>
                   Just a brief note to thank you for a wonderful few days
                   investigating what Cyprus has to offer golfers. I was not only
@@ -138,7 +136,7 @@ class Home extends Component {
                 </p>
               </div>
               <div className="right">
-                <i class="material-icons right-arrow">keyboard_arrow_right</i>
+                <i className="material-icons right-arrow">keyboard_arrow_right</i>
               </div>
             </div>
             <button className="grid-item testimonials-button">
@@ -176,11 +174,11 @@ class Home extends Component {
               <hr/>
               <h3>Eagle Golf Group</h3>
               <div className="contact-telephone">
-                <i class="material-icons">phone</i>
+                <i className="material-icons">phone</i>
                 <span>+44 (0) 7785 500 205</span>
               </div>
               <div className="contact-email">
-                <i class="material-icons">alternate_email</i>
+                <i className="material-icons">alternate_email</i>
                 <span>johnwade@eaglegolfgroup.co.uk</span>
               </div>
             </div>
