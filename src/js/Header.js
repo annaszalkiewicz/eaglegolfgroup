@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import Logo from "../img/logo-white.svg";
 
 class Header extends Component {
@@ -13,8 +14,8 @@ class Header extends Component {
   onClickHandler = () => {
     const { isOpen } = this.state;
     this.setState({ isOpen: !isOpen ? true : false });
-  }
-  
+  };
+
   render() {
     const { isOpen } = this.state;
 
@@ -34,26 +35,26 @@ class Header extends Component {
 
           {isOpen && (
             <nav className="nav-main open">
-              <ul>
-                <li>Home</li>
-                <li>Our Ethos</li>
-                <li>Events</li>
-                <li>Testimonials</li>
-                <li>Our Partners</li>
-                <li>Contact Us</li>
-              </ul>
+              <NavLink exact to="/">
+                Home
+              </NavLink>
+              <NavLink to="/ethos">Our Ethos</NavLink>
+              <NavLink to="/events">Events</NavLink>
+              <NavLink to="/testimonials">Testimonials</NavLink>
+              <NavLink to="/partners">Our Partners</NavLink>
+              <NavLink to="/contact">Contact Us</NavLink>
             </nav>
           )}
           {!isOpen && (
             <nav className="nav-main">
-              <ul>
-                <li>Home</li>
-                <li>Our Ethos</li>
-                <li>Events</li>
-                <li>Testimonials</li>
-                <li>Our Partners</li>
-                <li>Contact Us</li>
-              </ul>
+              <NavLink exact to="/">
+                Home
+              </NavLink>
+              <NavLink to="/ethos">Our Ethos</NavLink>
+              <NavLink to="/events">Events</NavLink>
+              <NavLink to="/testimonials">Testimonials</NavLink>
+              <NavLink to="/partners">Our Partners</NavLink>
+              <NavLink to="/contact">Contact Us</NavLink>
             </nav>
           )}
         </div>

@@ -20,7 +20,6 @@ class Home extends Component {
   render() {
     return (
       <div className="container" id="home">
-        <Header />
         <Carousel />
         <div className="hero-text">
           <h2>
@@ -191,7 +190,6 @@ class Home extends Component {
             </button>
           </div>
         </main>
-        <Footer />
       </div>
     );
   }
