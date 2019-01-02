@@ -52,7 +52,7 @@ class App extends Component {
 
         <Footer />
 
-        <img src={Eagle} alt="Eagle" className="eagle" />
+        {/* <img src={Eagle} alt="Eagle" className="eagle" /> */}
       </div>
     );
   }
