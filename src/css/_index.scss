@@ -89,7 +89,7 @@ code {
 }
 
 .nav-main {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   text-align: right;
@@ -178,6 +178,7 @@ main {
     "contactItem3"
     "contactItem4";
   grid-gap: 1em;
+  margin: auto;
 }
 
 .grid-item {
