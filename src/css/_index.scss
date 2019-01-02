@@ -142,8 +142,7 @@ main {
   display: grid;
   justify-content: center;
   grid-template-columns: 300px;
-  grid-template-rows: 300px 550px repeat(24, 300px);
-  // grid-auto-rows: min(300px);
+  grid-template-rows: 300px 560px repeat(15, 300px) 560px repeat(8, 300px);
   grid-template-areas: 
     "homeLogo"
     "homeIntro"
@@ -233,7 +232,8 @@ main {
   padding: 1em;
   text-align: center;
   img {
-    height: 11em;
+    height: 8em;
+    margin-top: 2em;
   }
   p {
     margin-top: 1em;
@@ -322,7 +322,6 @@ main {
   text-align: center;
   p {
     padding: 1em;
-    font-size: 0.8em;
   }
 }
 .quote-icon, .left-arrow, .right-arrow {
