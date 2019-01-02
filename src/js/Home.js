@@ -13,6 +13,7 @@ import Olympics from "../img/special-olympics.png";
 import Idg from "../img/idg.png";
 import Play from "../img/playonpro.png";
 import LogoBlue from "../img/logo-blue.svg";
+import ContactDetails from "./ContactDetails";
 
 class Home extends Component {
   render() {
@@ -169,19 +170,7 @@ class Home extends Component {
             <header className="grid-item section-header contact-item-1">
               <h2>Contact Us</h2>
             </header>
-            <div className="grid-item contact-item-2">
-              <p>If you would like to organize a charity sporting event, to become a sponsor or have any other query, please contact us.</p>
-              <hr/>
-              <h3>Eagle Golf Group</h3>
-              <div className="contact-telephone">
-                <i className="material-icons">phone</i>
-                <span>+44 (0) 7785 500 205</span>
-              </div>
-              <div className="contact-email">
-                <i className="material-icons">alternate_email</i>
-                <span>johnwade@eaglegolfgroup.co.uk</span>
-              </div>
-            </div>
+            <ContactDetails />
             <button className="grid-item contact-item-3 contact-button">
               <img src={LogoBlue} alt="Logo"/>
               <a href="#">Send message</a>
