@@ -8,6 +8,7 @@ import Events from "./Events";
 import Testimonials from "./Testimonials";
 import Partners from "./Partners";
 import Contact from "./Contact";
+import Eagle from "../img/logo-white-reversed.svg";
 
 class App extends Component {
 
@@ -15,6 +16,7 @@ class App extends Component {
 
     return (
       <div className="App">
+
         <Header />
 
         <Route
@@ -49,6 +51,8 @@ class App extends Component {
         />
 
         <Footer />
+
+        <img src={Eagle} alt="Eagle" className="eagle" />
       </div>
     );
   }
