@@ -14,6 +14,7 @@ import Sos from "../img/sos.png";
 import Olympics from "../img/special-olympics.png";
 import Idg from "../img/idg.png";
 import Play from "../img/playonpro.png";
+import LogoBlue from "../img/logo-blue.svg";
 
 class Home extends Component {
   render() {
@@ -184,7 +185,10 @@ class Home extends Component {
                 <span>johnwade@eaglegolfgroup.co.uk</span>
               </div>
             </div>
-        
+            <button className="grid-item contact-item-3 contact-button">
+              <img src={LogoBlue} alt="Logo"/>
+              <a href="#">Send message</a>
+            </button>
           </div>
         </main>
         <Footer />
