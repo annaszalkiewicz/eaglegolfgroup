@@ -722,3 +722,56 @@ footer {
   }
 
 }
+
+// CONTACT COMPONENT
+
+.contact-container {
+  width: 100%;
+  display: grid;
+  margin: 15vh auto;
+  grid-template-columns: 300px;
+  grid-template-rows: repeat(2, 300px) 650px;
+  grid-gap: 1em;
+  grid-template-areas:
+    "contactUsItem1"
+    "contactItem2"
+    "contactUsItem3";
+  justify-content: center;
+}
+.contact-us-item-1 {
+  grid-area: contactUsItem1;
+  background-color: $color-6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us-item-3 {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    margin: 1em 0;
+  }
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: 1em;
+    margin: 1em 0;
+  }
+  input {
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 3px rgba(0, 0, 0, 0.4);
+    margin-top: 1em;
+    font-size: 1em;
+  }
+}
+::placeholder {
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 0.5em;
+}
