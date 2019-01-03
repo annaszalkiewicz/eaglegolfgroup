@@ -6,7 +6,7 @@ class Testimonials extends Component {
     super(props);
     this.state = {
       testimonials: testimonials,
-      colors: ['#b9c056', '#88a429', '#9bbe1f', '#273f29', '#14253f', '#091327']
+      colors: ['#757A2F', '#677E20', '#677F10', '#273f29', '#14253f', '#091327']
     };
     this.toggleCollapsible = this.toggleCollapsible.bind(this);
   }
@@ -33,15 +33,13 @@ class Testimonials extends Component {
 
         {testimonials.map(testimonial => (
             <div className="testimonial-card" key={testimonial.name}>
-              <button className="collapsible" onClick={this.toggleCollapsible} style={{backgroundColor: randomColor}}>
+              <button className="collapsible" onClick={this.toggleCollapsible} style={{border: 'solid 10px' + randomColor, color: randomColor}}>
                 <div className="avatar">
                 <img src={require(`../img/${testimonial.avatar}`)} alt="avatar" />
-
-                  {/* <img src="/static/media/placeholder.png" alt="avatar" /> */}
                 </div>
-                <h2>{testimonial.name}</h2>
-                <h2 className="position">{testimonial.position}</h2>
-                <hr />
+                <h2 style={{color: randomColor}}>{testimonial.name}</h2>
+                <h2 className="position" style={{color: randomColor}}>{testimonial.position}</h2>
+                <hr style={{border: 'solid 1px' + randomColor}} />
               </button>
               <div className="content">
                 <p>{testimonial.testimonial}</p>
