@@ -1,4 +1,9 @@
-@media screen and (min-width: 480px) and (orientation: landscape) {
+@media screen and (min-width: 400px) and (orientation: landscape) {
+  .header-main {
+    h1 {
+      display: block;
+    }
+  }
   .hero-text {
     h2 {
       font-size: 1em;
@@ -6,13 +11,106 @@
     .btn-primary {
       padding: 1em 3em;
     }
+    .nav-main {
+      a {
+        padding: 0.6em;
+      }
+    }
   }
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 360px) and (orientation: portrait) {
+  .header-main {
+    h1 {
+      display: block;
+    }
+  }
+
   footer {
     position: fixed;
     bottom: 0;
     left: 0;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .grid-container {
+    width: 100%;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(10, 300px) auto repeat(4, 300px);
+    grid-template-areas:
+      "homeLogo homeIntro"
+      "goalsHeader homeIntro"
+      "goalsItem1 goalsItem2"
+      "goalsItem3 goalsItem4"
+      "goalsItem5 goalsItem6"
+      "goalsItem7 goalsItem8"
+      "eventsHeader eventItem1"
+      "eventItem2 eventItem1"
+      "eventItem3 eventItem4"
+      "testimonialsHeader testimonialsButton"
+      "testimonialsItem1 testimonialsItem1"
+      "partnersItem1 partnersItem2"
+      "partnersItem3 partnersItem4"
+      "contactItem1 contactItem2"
+      "contactItem3 contactItem3";
+  }
+  .ethos-container {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(4, 300px);
+    grid-template-areas:
+      "ethosItem1 ethosItem2"
+      ". ethosItem2"
+      "ethosItem3 ethosItem4"
+      "ethosItem5 ethosItem6";
+  }
+  .events-container {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 300px) auto;
+    grid-template-areas:
+      "eventsItem1 eventsItem2"
+      "eventsItem3 eventsItem2"
+      ". eventsItem2";
+    justify-content: center;
+  }
+  .event-list {
+    justify-content: space-evenly;
+  }
+  .event-item-1 {
+    h3 {
+      font-size: 1.9em;
+    }
+  }
+  .testimonial-container {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .testimonial-item-1 {
+    margin-top: 13px;
+  }
+  .testimonial-card {
+    width: 300px;
+  }
+  .our-partners-container {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 300px) auto 300px auto;
+    grid-template-areas:
+      "ourPartnersItem1 ourPartnersItem2"
+      "ourPartnersItem3 ourPartnersItem4"
+      ". ourPartnersItem4"
+      "ourPartnersItem5 ourPartnersItem6"
+      "ourPartnersItem7 ourPartnersItem8";
+  }
+  .contact-container {
+    grid-template-columns: 3repeat(2, 300px);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas:
+      "contactUsItem3 contactUsItem1"
+      "contactUsItem3 contactItem2";
+  }
+  .contact-us-item-3 {
+    height: 613px;
   }
 }
