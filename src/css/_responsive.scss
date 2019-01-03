@@ -104,7 +104,7 @@
       "ourPartnersItem7 ourPartnersItem8";
   }
   .contact-container {
-    grid-template-columns: 3repeat(2, 300px);
+    grid-template-columns: repeat(2, 300px);
     grid-template-rows: repeat(2, 300px);
     grid-template-areas:
       "contactUsItem3 contactUsItem1"
@@ -112,5 +112,73 @@
   }
   .contact-us-item-3 {
     height: 613px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .grid-container {
+    width: 100%;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(9, 300px);
+    grid-template-areas:
+      "homeLogo homeIntro homeIntro"
+      "goalsHeader goalsItem1 goalsItem2"
+      "goalsItem3 goalsItem4 goalsItem5"
+      "goalsItem6 goalsItem7 goalsItem8"
+      "eventsHeader eventItem1 eventItem1"
+      "eventItem2 eventItem3 eventItem4"
+      "testimonialsButton testimonialsItem1 testimonialsItem1"
+      "partnersItem2 partnersItem3 partnersItem4"
+      "contactItem1 contactItem2 contactItem3";
+  }
+  .partners-item-1, .testimonials-header {
+    display: none;
+  }
+  .ethos-container {
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas:
+      "ethosItem2 ethosItem2 ethosItem2 ethosItem1"
+      "ethosItem3 ethosItem4 ethosItem5 ethosItem6";
+  }
+  .ethos-item-1 {
+    h2 {
+      font-size: 1.3em;
+    }
+  }
+  .team p {
+    font-size: 2em;
+}
+  .events-container {
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 300px 310px;
+    grid-template-areas:
+      "eventsItem1 eventsItem2 eventsItem2"
+      "eventsItem3 eventsItem2 eventsItem2";
+    justify-content: center;
+  }
+  .testimonial-container {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .our-partners-container {
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 300px) auto;
+    grid-template-areas:
+      "ourPartnersItem1 ourPartnersItem2 ourPartnersItem3"
+      "ourPartnersItem4 ourPartnersItem4 ourPartnersItem5"
+      "ourPartnersItem6 ourPartnersItem7 ourPartnersItem8"
+      ".  ourPartnersItem7 .";
+  }
+  .contact-container {
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas:
+      "contactUsItem3 contactUsItem3 contactUsItem1"
+      "contactUsItem3 contactUsItem3 contactItem2";
+  }
+  .contact-us-item-3 {
+    padding: 2em;
   }
 }
