@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Carousel from "./Carousel";
 import Logo from "../img/logo-white.svg";
 import Charity from "../img/charity-icon.svg";
@@ -94,7 +95,7 @@ class Home extends Component {
               </p>
             </div>
             <button className="grid-item goals-button goals-item-8">
-              <a href="#">Learn more about us</a>
+              <Link to="/ethos">Learn more about us</Link>
             </button>
             <header className="grid-item section-header events-header">
               <h2>Next Event</h2>
@@ -115,7 +116,7 @@ class Home extends Component {
               <img src={Olympics} alt="Special Olympics Albania" />
             </div>
             <button className="grid-item event-button event-item-4">
-              <a href="#">Learn more about events</a>
+              <Link to="/events">Learn more about events</Link>
             </button>
             <header className="grid-item section-header testimonials-header">
               <h2>Testimonials</h2>
@@ -137,11 +138,13 @@ class Home extends Component {
                 </p>
               </div>
               <div className="right">
-                <i className="material-icons right-arrow">keyboard_arrow_right</i>
+                <i className="material-icons right-arrow">
+                  keyboard_arrow_right
+                </i>
               </div>
             </div>
             <button className="grid-item testimonials-button">
-              <a href="#">Read more testimonials</a>
+              <Link to="/testimonials">Read more testimonials</Link>
             </button>
             <header className="grid-item section-header partners-item-1">
               <h2>Our Partners</h2>
@@ -165,15 +168,15 @@ class Home extends Component {
               </a>
             </div>
             <button className="grid-item partners-item-4 partners-button">
-             <a href="#">Learn more about our partners</a>
+              <Link to="/partners">Learn more about our partners</Link>
             </button>
             <header className="grid-item section-header contact-item-1">
               <h2>Contact Us</h2>
             </header>
             <ContactDetails />
             <button className="grid-item contact-item-3 contact-button">
-              <img src={LogoBlue} alt="Logo"/>
-              <a href="#">Send message</a>
+              <img src={LogoBlue} alt="Logo" />
+              <Link to="/contact">Send message</Link>
             </button>
           </div>
         </main>

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Sos from "../img/sos.png";
 import testimonials from "../data/testimonials.json";
 
 class Testimonials extends Component {
