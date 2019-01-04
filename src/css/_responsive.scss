@@ -76,6 +76,32 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
   }
 }
 
+/* Fix for Nexus 7 and Blackberry Playbook */
+
+@media screen and (min-width: 600px) and (min-height: 960px) and (orientation: portrait) {
+  .nav-main {
+    top: 8%;
+  }
+  .ethos-container,
+  .events-container,
+  .testimonial-container,
+  .our-partners-container,
+  .contact-container {
+    margin: 8vh auto 0 auto;
+  }
+}
+@media screen and (min-width: 960px) and (min-height: 600px) and (orientation: landscape) {
+  .hero-text h2 {
+    font-size: 1.5em;
+  }
+  .ethos-container,
+  .events-container,
+  .testimonial-container,
+  .our-partners-container,
+  .contact-container {
+    margin: 13vh auto 0 auto;
+  }
+}
 @media screen and (min-width: 640px) {
   .grid-container {
     width: 100%;
