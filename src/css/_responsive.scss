@@ -269,6 +269,14 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
 // Fix for tablets
 
 @media screen and (min-width: 768px) {
+  .hero-text {
+    h2 {
+      font-size: 3em;
+    }
+    .btn-primary {
+      font-size: 1.5em;
+    }
+  }
   .grid-container,
   .ethos-container,
   .events-container,
@@ -281,6 +289,19 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
     position: fixed;
     bottom: 0;
     left: 0;
+    flex-direction: row;
+    .copyright {
+      width: 70%;
+      text-align: left;
+      line-height: 1.8;
+    }
+    .credit {
+      width: 26%;
+      text-align: right;
+      p {
+        justify-content: flex-end;
+      }
+    }
   }
 }
 

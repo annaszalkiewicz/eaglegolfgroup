@@ -30,7 +30,7 @@ class Footer extends Component {
           <p>Copyright &copy; {year} Eagle Golf Group All rights reserved</p>
         </div>
         <div className="credit">
-          <p>Designed by &nbsp;
+          <p>Designed &amp; developed by &nbsp;
             <a href="https://mywebgraphicdesign.com" target="_blank" rel="noopener noreferrer">
               <img src={Logo} alt="My Web Graphic Design"/>
             </a>
