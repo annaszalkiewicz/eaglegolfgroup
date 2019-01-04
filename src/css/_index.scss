@@ -63,13 +63,11 @@ code {
 }
 
 // HEADER
-
 .header-main {
   position: fixed;
   width: 100vw;
   top: 0;
   overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
   color: $white-color;
   display: flex;
   justify-content: space-between;
@@ -356,9 +354,9 @@ main {
 .mySlides {
   display: none;
 }
-.active {
-  background-color: #717171;
-}
+// .active {
+//   background-color: #717171;
+// }
 
 /* Fading animation */
 .fade {
