@@ -32,11 +32,12 @@
       display: block;
     }
   }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+  .ethos-container,
+  .events-container,
+  .testimonial-container,
+  .our-partners-container,
+  .contact-container {
+    margin: 13vh auto 0 auto;
   }
 }
 
