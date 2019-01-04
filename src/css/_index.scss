@@ -547,6 +547,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  margin-top: 1em;
   padding: 1em;
   text-align: center;
   flex-direction: column;
@@ -576,7 +577,7 @@ footer {
 .ethos-container {
   width: 100%;
   display: grid;
-  margin: 15vh auto;
+  margin: 15vh auto 0 auto;
   grid-template-columns: 300px;
   grid-template-rows:  300px 600px repeat(4, 300px);
   grid-gap: 1em;
@@ -640,7 +641,7 @@ footer {
 .events-container {
   width: 100%;
   display: grid;
-  margin: 15vh auto;
+  margin: 15vh auto 0 auto;
   grid-template-columns: 300px;
   grid-template-rows: 300px 1200px 300px;
   grid-gap: 1em;
@@ -688,7 +689,7 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 15vh auto;
+  margin: 15vh auto 0 auto;
   width: 300px;
   justify-content: center;
 }
@@ -744,7 +745,7 @@ footer {
 }
 
 .position {
-  max-height: 3.2em;
+  height: 2.5em;
 }
 
 .content {
@@ -782,7 +783,7 @@ footer {
 .our-partners-container {
   width: 100%;
   display: grid;
-  margin: 15vh auto;
+  margin: 15vh auto 0 auto;
   grid-template-columns: 300px;
   grid-template-rows: repeat(3, 300px) 460px repeat(2, 300px) 450px 300px;
   grid-gap: 1em;
@@ -852,7 +853,7 @@ footer {
 .contact-container {
   width: 100%;
   display: grid;
-  margin: 15vh auto;
+  margin: 15vh auto 0 auto;
   grid-template-columns: 300px;
   grid-template-rows: repeat(2, 300px) 650px;
   grid-gap: 1em;
