@@ -62,6 +62,19 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
     margin: 10vh auto 0 auto;
   }
 }
+/* Fix for Nokia N9 */
+@media screen and (width: 854px) and (height: 480px) and (orientation: landscape) {
+  .hero-text h2 {
+    font-size: 1.5em;
+  }
+  .ethos-container,
+  .events-container,
+  .testimonial-container,
+  .our-partners-container,
+  .contact-container {
+    margin: 17vh auto 0 auto;
+  }
+}
 
 @media screen and (min-width: 640px) {
   .grid-container {
