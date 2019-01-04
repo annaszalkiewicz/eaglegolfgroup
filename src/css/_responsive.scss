@@ -47,6 +47,21 @@
     }
   }
 }
+/* 
+Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
+*/
+@media screen and (min-width: 375px) and (min-height: 730px) {
+  .nav-main {
+    top: 10%;
+  }
+  .ethos-container,
+  .events-container,
+  .testimonial-container,
+  .our-partners-container,
+  .contact-container {
+    margin: 10vh auto 0 auto;
+  }
+}
 
 @media screen and (min-width: 640px) {
   .grid-container {
@@ -98,6 +113,7 @@
   }
   .testimonial-container {
     width: 100%;
+    max-width: 650px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
