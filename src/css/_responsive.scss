@@ -102,6 +102,9 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
     margin: 13vh auto 0 auto;
   }
 }
+
+/* 2 columns grid design for devices with min-width 640px */
+
 @media screen and (min-width: 640px) {
   .grid-container {
     width: 100%;
@@ -262,6 +265,46 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
     padding: 2em;
   }
 }
+
+// Fix for tablets
+
+@media screen and (min-width: 768px) {
+  .grid-container,
+  .ethos-container,
+  .events-container,
+  .testimonial-container,
+  .our-partners-container,
+  .contact-container {
+    margin-bottom: 5em;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .ethos-container,
+  .events-container,
+  .testimonial-container,
+  .our-partners-container,
+  .contact-container {
+    margin: 10vh auto 0 auto;
+  }
+  .grid-container,
+  .ethos-container,
+  .events-container,
+  .testimonial-container,
+  .our-partners-container,
+  .contact-container {
+    margin-bottom: 5em;
+  }
+  .testimonial-container {
+    max-width: 950px;
+  }
+}
+
 // @media screen and (min-width: 1279px) {
 //   .grid-container {
 //     width: 100%;
