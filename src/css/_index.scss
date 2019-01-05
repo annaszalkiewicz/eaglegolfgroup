@@ -13,6 +13,9 @@ $color-4: #273f29;
 $color-5: #14253f;
 $color-6: #091327;
 $color-7: #f1f7f2;
+$hoverColor: #b9c056;
+$hoverTransition: all 0.3s ease-out;
+$hoverShadow: 0 0 20px #000;
 
 $white-color: #fff;
 $black-color: #000;
@@ -59,11 +62,9 @@ code {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
   img {
     height: 2em;
   }
-
   h1 {
     margin-left: 0.5em;
     font-family: $heading-font;
@@ -88,7 +89,6 @@ code {
   transform: translateX(200px);
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 10000;
-
   a {
     cursor: pointer;
     padding: 1em;
@@ -96,6 +96,10 @@ code {
     height: 100%;
     color: $white-color;
     text-decoration: none;
+    &:hover {
+      border-bottom: solid 10px #b9c056;
+      transition: all 1s ease-out;
+    }
   }
   a:nth-child(1) {
     border-top: solid 10px $color-1;
@@ -266,6 +270,10 @@ main {
   font-family: $heading-font;
   font-size: 2.5em;
   font-weight: bold;
+  &:hover {
+    box-shadow: $hoverShadow;
+    transition: $hoverTransition;
+  }
   a {
     color: $color-2;
     text-decoration: none;
@@ -310,6 +318,10 @@ main {
   font-size: 2.5em;
   font-weight: bold;
   border: solid 10px $color-3;
+  &:hover {
+    box-shadow: $hoverShadow;
+    transition: $hoverTransition;
+  }
   a {
     text-decoration: none;
     color: $color-3;
@@ -942,4 +954,20 @@ footer {
   font-style: italic;
   text-align: right;
   margin-bottom: 0.5em;
+}
+
+// Hover effects
+
+.goals-button,
+.event-button,
+.btn-primary,
+.testimonials-button,
+.partners-button,
+.contact-button,
+.our-partners-item-5,
+.our-partners-item-8 {
+  &:hover {
+    box-shadow: $hoverShadow;
+    transition: $hoverTransition;
+  }
 }
