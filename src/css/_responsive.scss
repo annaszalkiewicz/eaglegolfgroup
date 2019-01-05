@@ -178,14 +178,11 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
   }
   .contact-container {
     grid-template-columns: repeat(2, 300px);
-    grid-template-rows: repeat(2, 300px);
+    grid-template-rows: 300px auto;
     grid-template-areas:
       "contactUsItem3 contactUsItem1"
       "contactUsItem3 contactItem2";
   }
-  // .contact-us-item-3 {
-  //   height: 613px;
-  // }
 }
 @media screen and (min-width: 1000px) {
   .grid-container {
@@ -256,7 +253,7 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
   }
   .contact-container {
     grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(2, 300px);
+    grid-template-rows: 300px auto;
     grid-template-areas:
       "contactUsItem3 contactUsItem3 contactUsItem1"
       "contactUsItem3 contactUsItem3 contactItem2";
