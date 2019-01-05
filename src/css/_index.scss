@@ -102,7 +102,6 @@ code {
   }
   @for $i from 1 through 6 {
     a.active:nth-child(#{$i}) {
-      border-bottom: solid 1px #fff;
       transition: all 0.3s ease-out;
     }
   }
