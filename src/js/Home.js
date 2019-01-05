@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Carousel from "./Carousel";
 import Logo from "../img/logo-white.svg";
 import Charity from "../img/charity-icon.svg";
 import Flag from "../img/flag-icon.svg";
@@ -36,7 +35,9 @@ class Home extends Component {
   render() {
     return (
       <div className="container" id="home">
-        <Carousel />
+        <div className="carousel">
+          <div className="slider-container"></div>
+        </div>
         <div className="hero-text">
           <h2>
             A bird's eye view on the world of celebrity charity sporting events
