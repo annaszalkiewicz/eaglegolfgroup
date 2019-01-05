@@ -26,16 +26,16 @@ class Header extends Component {
           style={{
             background:
               window.location.pathname === "/"
-                ? "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0))"
+                ? "linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))"
                 : window.location.pathname === "/ethos"
-                ? "#757A2F"
+                ? "rgba(103, 126, 32, 0.8)"
                 : window.location.pathname === "/events"
-                ? "#677E20"
+                ? "rgba(103, 127, 16, 0.8)"
                 : window.location.pathname === "/testimonials"
-                ? "#273f29"
+                ? "rgba(39, 63, 41, 0.8)"
                 : window.location.pathname === "/partners"
-                ? "#14253f"
-                : "#091327"
+                ? "rgba(20, 37, 63, 0.8)"
+                : "rgba(9, 19, 39, 0.8)"
           }}
         >
           <div className="logo">

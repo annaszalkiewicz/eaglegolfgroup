@@ -118,22 +118,46 @@ code {
     text-decoration: none;
   }
   a:nth-child(1) {
-    border-top: solid 5px $color-1;
+    border-top: solid 10px $color-1;
+  }
+  @for $i from 1 through 6 {
+    a.active:nth-child(#{$i}) {
+      border-bottom: solid 1px #fff;
+      transition: all 0.3s ease-out;
+    }
+  }
+  a.active:nth-child(1) {
+    background-color: $color-1;
   }
   a:nth-child(2) {
-    border-top: solid 5px $color-2;
+    border-top: solid 10px $color-2;
+  }
+  a.active:nth-child(2) {
+    background-color: $color-2;
   }
   a:nth-child(3) {
-    border-top: solid 6px $color-3;
+    border-top: solid 10px $color-3;
+  }
+  a.active:nth-child(3) {
+    background-color: $color-3;
   }
   a:nth-child(4) {
-    border-top: solid 7px $color-4;
+    border-top: solid 10px $color-4;
+  }
+  a.active:nth-child(4) {
+    background-color: $color-4;
   }
   a:nth-child(5) {
-    border-top: solid 8px $color-5;
+    border-top: solid 10px $color-5;
+  }
+  a.active:nth-child(5) {
+    background-color: $color-5;
   }
   a:nth-child(6) {
-    border-top: solid 9px $color-6;
+    border-top: solid 10px $color-6;
+  }
+  a.active:nth-child(6) {
+    background-color: $color-6;
   }
 }
 .open {
