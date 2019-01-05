@@ -183,9 +183,9 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
       "contactUsItem3 contactUsItem1"
       "contactUsItem3 contactItem2";
   }
-  .contact-us-item-3 {
-    height: 613px;
-  }
+  // .contact-us-item-3 {
+  //   height: 613px;
+  // }
 }
 @media screen and (min-width: 1000px) {
   .grid-container {
@@ -325,7 +325,7 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
     max-width: 950px;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
   .nav {
     display: none;
   }
@@ -343,33 +343,111 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
   }
 }
 
-// @media screen and (min-width: 1279px) {
-//   .grid-container {
-//     width: 100%;
-//     grid-template-columns: repeat(3, 400px);
-//     grid-template-rows: repeat(9, 400px);
-//   }
-//   .ethos-container {
-//     grid-template-columns: repeat(4, 400px);
-//     grid-template-rows: repeat(2, 400px);
-//   }
-//   .events-container {
-//     grid-template-columns: repeat(3, 400px);
-//     grid-template-rows: repeat(2, 400px);
-//   }
-//   .our-partners-container {
-//     grid-template-columns: repeat(3, 400px);
-//     grid-template-rows: repeat(3, 400px);
-//     grid-template-areas:
-//       "ourPartnersItem1 ourPartnersItem2 ourPartnersItem3"
-//       "ourPartnersItem4 ourPartnersItem4 ourPartnersItem5"
-//       "ourPartnersItem6 ourPartnersItem7 ourPartnersItem8";
-//   }
-//   .contact-container {
-//     grid-template-columns: repeat(3, 400px);
-//     grid-template-rows: repeat(2, 400px);
-//     grid-template-areas:
-//       "contactUsItem3 contactUsItem3 contactUsItem1"
-//       "contactUsItem3 contactUsItem3 contactItem2";
-//   }
-// }
+// Design for laptops
+
+@media screen and (min-width: 1280px) {
+  html, body, #root, .App {
+    font-size: 18px;
+  }
+  .logo {
+    h1 {
+      font-size: 2em;
+    }
+  }
+  .nav-main {
+    font-size: 1.2em;
+    right: 8em;
+  }
+  .grid-container {
+    width: 100%;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(9, 400px);
+  }
+  .home-container {
+    img {
+      height: 12em;
+      margin-top: 2em;
+    }
+    h2 {
+      font-size: 2em;
+    }
+  }
+  .goals-list {
+    img {
+      height: 9em;
+    }
+    p {
+      margin-top: 3em;
+    }
+  }
+  .goals-button {
+    font-size: 3em;
+  }
+  .contact-button {
+    img {
+      height: 13em;
+    }
+    a {
+      font-size: 3em;
+    }
+  }
+  .ethos-container {
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 300px);
+  }
+  .ethos-item-2 {
+    padding: 1.4em;
+  }
+  .events-container {
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(2, 400px);
+  }
+  .events-item-2 {
+    padding: 3em;
+  }
+  .testimonial-container {
+    max-width: 1280px;
+  }
+  .testimonial-card {
+    width: 400px;
+  }
+  .testimonial-item-1,
+  .collapsible {
+    width: 400px;
+    height: 400px;
+  }
+  .avatar {
+    width: 120px;
+    height: 119px;
+    margin: 2em;
+  }
+  .collapsible {
+    h2 {
+      font-size: 2em;
+    }
+  }
+  .our-partners-container {
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(3, 400px);
+    grid-template-areas:
+      "ourPartnersItem1 ourPartnersItem2 ourPartnersItem3"
+      "ourPartnersItem4 ourPartnersItem4 ourPartnersItem5"
+      "ourPartnersItem6 ourPartnersItem7 ourPartnersItem8";
+  }
+  .our-partners-item-3,
+  .our-partners-item-4 {
+    padding: 2em;
+  }
+  .our-partners-item-7 {
+    p {
+      margin-top: 0.3em;
+    }
+  }
+  .contact-container {
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 400px auto;
+    grid-template-areas:
+      "contactUsItem3 contactUsItem3 contactUsItem1"
+      "contactUsItem3 contactUsItem3 contactItem2";
+  }
+}
