@@ -529,11 +529,12 @@ main {
   font-size: 1em;
   color: $white-color;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
   padding: 1em;
   min-width: 80%;
   line-height: 1.5;
   font-style: italic;
+  border: solid 2px #fff;
 }
 .btn-primary {
   margin: 2em auto 1em auto;
