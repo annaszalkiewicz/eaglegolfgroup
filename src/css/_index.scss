@@ -96,7 +96,8 @@ code {
     height: 100%;
     color: $white-color;
     text-decoration: none;
-    &:hover {
+    &:hover,
+    &:focus {
       border-bottom: solid 10px #b9c056;
       transition: all 1s ease-out;
     }
@@ -786,7 +787,8 @@ footer {
   }
 }
 
-.collapsible:hover {
+.collapsible:hover,
+.collapsible:focus {
  opacity: 0.8;
 }
 .collapsible:after {
@@ -984,12 +986,40 @@ footer {
 .contact-button,
 .our-partners-item-5,
 .our-partners-item-8 {
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: $hoverShadow;
     transition: $hoverTransition;
   }
+  a:hover,
+  a:focus {
+    color: $hoverColor;
+  }
 }
-
+.partners-item-2,
+.partners-item-3 {
+  a {
+    &:focus {
+      box-shadow: $hoverShadow;
+      transition: $hoverTransition;
+    }
+  }
+}
+.myLogo {
+  &:hover,
+  &:focus {
+    box-shadow: $hoverShadow;
+    transition: $hoverTransition;
+    opacity: 0.6;
+  }
+}
 :focus {
   outline: none;
+}
+.contact-form {
+  input {
+    &:focus {
+      border-bottom: solid 3px $hoverColor;
+    }
+  }
 }

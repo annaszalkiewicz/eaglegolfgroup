@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <a href="#main-content" className="skip-link" aria-hidden="true">
+        <a href="#main-content" className="skip-link">
           Skip to main content
         </a>
 

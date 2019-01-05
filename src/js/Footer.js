@@ -32,7 +32,7 @@ class Footer extends Component {
         <div className="credit">
           <p>Designed &amp; developed by &nbsp;
             <a href="https://mywebgraphicdesign.com" target="_blank" rel="noopener noreferrer">
-              <img src={Logo} alt="My Web Graphic Design"/>
+              <img src={Logo} alt="My Web Graphic Design" className="myLogo"/>
             </a>
           </p>
         </div>
