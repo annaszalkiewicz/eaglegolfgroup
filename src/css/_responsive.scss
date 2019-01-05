@@ -325,6 +325,23 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
     max-width: 950px;
   }
 }
+@media screen and (min-width: 1023px) {
+  .nav {
+    display: none;
+  }
+  .nav-main {
+    display: inline-block;
+    background: none;
+    top: 0;
+    right: 13em;
+    padding: 1em;
+    a {
+      margin: 0 0.3em;
+      line-height: 2;
+      padding: 1em 0.5em;
+    }
+  }
+}
 
 // @media screen and (min-width: 1279px) {
 //   .grid-container {
