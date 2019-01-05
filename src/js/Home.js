@@ -47,7 +47,7 @@ class Home extends Component {
           </button>
         </div>
         <main>
-          <div className="grid-container">
+          <div className="grid-container" id="main-content">
             <div className="grid-item home-logo">
               <div className="home-container">
                 <img src={Logo} alt="Eagle Golf Group logo" />

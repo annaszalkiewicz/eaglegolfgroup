@@ -956,6 +956,24 @@ footer {
   margin-bottom: 0.5em;
 }
 
+// Skip link
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  color: #fff;
+  z-index: 100000;
+  background: #000;
+  text-decoration: none;
+  transform: translateX(-500px);
+  &:focus {
+    transform: translateX(0);
+    transition: transform 0.3 ease-out;
+  }
+}
+
 // Hover effects
 
 .goals-button,
@@ -970,4 +988,8 @@ footer {
     box-shadow: $hoverShadow;
     transition: $hoverTransition;
   }
+}
+
+:focus {
+  outline: none;
 }

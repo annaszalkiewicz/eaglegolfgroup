@@ -11,11 +11,12 @@ import Contact from "./Contact";
 // import Eagle from "../img/logo-white-reversed.svg";
 
 class App extends Component {
-
   render() {
-
     return (
       <div className="App">
+        <a href="#main-content" className="skip-link" aria-hidden="true">
+          Skip to main content
+        </a>
 
         <Header />
 
