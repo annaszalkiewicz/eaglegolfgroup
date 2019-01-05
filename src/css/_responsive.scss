@@ -595,3 +595,39 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
     }
   }
 }
+@media screen and (min-width: 1024px) and (min-height: 768px) {
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+      background-image: url("../img/carousel//golf-carousel-1280x800.jpg");
+    }
+    24% {
+      transform: scale(1.5);
+      background-image: url("../img/carousel/golf-carousel-1280x800.jpg");
+    }
+    25% {
+      transform: scale(1);
+      background-image: url("../img/carousel/football-carousel-1280x800.jpg");
+    }
+    49% {
+      transform: scale(1.5);
+      background-image: url("../img/carousel/football-carousel-1280x800.jpg");
+    }
+    50% {
+      transform: scale(1);
+      background-image: url("../img/carousel/golf-carousel-2-1280x800.jpg");
+    }
+    74% {
+      transform: scale(1.5);
+      background-image: url("../img/carousel/golf-carousel-2-1280x800.jpg");
+    }
+    75% {
+      transform: scale(1);
+      background-image: url("../img/carousel/football-carousel-2-800x1280.jpg");
+    }
+    100% {
+      transform: scale(1.5);
+      background-image: url("../img/carousel/football-carousel-2-800x1280.jpg");
+    }
+  }
+}
