@@ -580,11 +580,16 @@ main {
   font-size: 1em;
   font-weight: bold;
   cursor: pointer;
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
 }
 .btn-carousel {
   vertical-align: middle;
   font-size: 1.3em;
   margin-left: 3px;
+  color: $white-color;
 }
 
 // EAGLE

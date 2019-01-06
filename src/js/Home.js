@@ -43,7 +43,8 @@ class Home extends Component {
             A bird's eye view on the world of celebrity charity sporting events
           </h2>
           <button className="btn-primary">
-            Contact Us <i className="material-icons btn-carousel">send</i>
+            <Link to="/contact">Contact Us <i className="material-icons btn-carousel">send</i>
+            </Link>
           </button>
         </div>
         <main>
