@@ -330,8 +330,10 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
     display: inline-block;
     background: none;
     top: 0;
-    right: 13em;
+    right: 0;
     padding: 1em;
+    transform: translateX(0);
+    overflow: hidden;
     a {
       margin: 0 0.3em;
       line-height: 2;
@@ -353,7 +355,6 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
   }
   .nav-main {
     font-size: 1.2em;
-    right: 8em;
   }
   .grid-container {
     width: 100%;
