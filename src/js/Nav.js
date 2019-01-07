@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import Fade from "react-reveal/Fade";
 
 class Nav extends Component {
   render() {
