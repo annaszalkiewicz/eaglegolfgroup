@@ -11,7 +11,7 @@ class Ethos extends Component {
               <h2>Our Ethos</h2>
             </header>
           </Fade>
-          <Fade left>
+          <Fade left delay={100}>
             <div className="grid-item ethos-item-2">
               <p>
                 Eagle Golf Group remains a consistent leader throughout the past
@@ -35,25 +35,25 @@ class Ethos extends Component {
               </p>
             </div>
           </Fade>
-          <Fade left>
+          <Fade left delay={200}>
             <div className="grid-item ethos-item-3 team">
               <h2>T</h2>
               <p>Trust</p>
             </div>
           </Fade>
-          <Fade bottom>
+          <Fade bottom delay={300}>
             <div className="grid-item ethos-item-4 team">
               <h2>E</h2>
               <p>Enthusiasm</p>
             </div>
           </Fade>
-          <Fade bottom>
+          <Fade bottom delay={400}>
             <div className="grid-item ethos-item-5 team">
               <h2>A</h2>
               <p>Achievement</p>
             </div>
           </Fade>
-          <Fade right>
+          <Fade right delay={500}>
             <div className="grid-item ethos-item-6 team">
               <h2>M</h2>
               <p>Motivation</p>
