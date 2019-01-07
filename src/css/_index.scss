@@ -343,55 +343,29 @@ main {
 .testimonials-item-1 {
   grid-area: testimonialsItem1;
   display: flex;
-
-  justify-content: space-between;
-  align-items: center;
-}
-.testimonials-container {
-  display: flex;
   flex-direction: column;
-  width: 290px;
-  text-align: center;
-  p {
-    padding: 1em;
-  }
+  padding: 1em;
 }
-.quote-icon,
-.left-arrow,
-.right-arrow {
+.quote-icon {
   font-size: 3em;
+  margin: 0.3em auto 0 auto;
 }
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+.slick-slider {
+  margin: 2em;
+  text-align: center;
 }
-.mySlides {
-  display: none;
+.slick-arrow {
+  background-color: transparent;
 }
-// .active {
-//   background-color: #717171;
-// }
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.slick-prev:before {
+  content: "&lt;";
+  color: #000;
 }
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.slick-next:before {
+  content: "&gt;";
+  color: #000;
 }
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
+  
 .testimonials-button {
   grid-area: testimonialsButton;
   border: solid 10px $color-4;
