@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Nav from "./Nav";
 import Logo from "../img/logo-white.svg";
+import Fade from "react-reveal/Fade";
 
 class Header extends Component {
   constructor(props) {
@@ -39,17 +40,21 @@ class Header extends Component {
           }}
         >
           <div className="logo">
-            <img src={Logo} alt="Eagle Golf Group" />
-            <h1>Eagle Golf Group</h1>
+            <Fade left>
+              <img src={Logo} alt="Eagle Golf Group" />
+              <h1>Eagle Golf Group</h1>
+            </Fade>
           </div>
-          <div className="nav">
-            <i
-              className="material-icons hamburger-menu"
-              onClick={this.onClickHandler}
-            >
-              menu
-            </i>
-          </div>
+          <Fade right delay={500}>
+            <div className="nav">
+              <i
+                className="material-icons hamburger-menu"
+                onClick={this.onClickHandler}
+              >
+                menu
+              </i>
+            </div>
+          </Fade>
         </header>
         <Nav isOpen={isOpen} />
       </section>
