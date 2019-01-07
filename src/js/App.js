@@ -8,7 +8,6 @@ import Events from "./Events";
 import Testimonials from "./Testimonials";
 import Partners from "./Partners";
 import Contact from "./Contact";
-// import Eagle from "../img/logo-white-reversed.svg";
 
 class App extends Component {
   render() {
