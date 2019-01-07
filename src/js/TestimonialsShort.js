@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 class TestimonialsShort extends Component {
   render() {
@@ -7,7 +9,9 @@ class TestimonialsShort extends Component {
     const settings = {
       arrows: true,
       autoplay: true,
-      autoplaySpeed: 5000
+      autoplaySpeed: 5000,
+      slidesToShow: 1,
+      slidesToScroll: 1
     };
 
     return (

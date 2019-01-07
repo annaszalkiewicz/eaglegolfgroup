@@ -353,19 +353,7 @@ main {
 .slick-slider {
   margin: 2em;
   text-align: center;
-}
-.slick-arrow {
-  background-color: transparent;
-}
-.slick-prev:before {
-  content: "&lt;";
-  color: #000;
-}
-.slick-next:before {
-  content: "&gt;";
-  color: #000;
-}
-  
+}  
 .testimonials-button {
   grid-area: testimonialsButton;
   border: solid 10px $color-4;
