@@ -40,6 +40,13 @@ body,
   color: $black-color;
   overflow-x: hidden;
 }
+body {
+  background-image: url("../img/logo-reversed.svg");
+  background-attachment: fixed;
+  background-position-x: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -512,6 +519,13 @@ main {
     transform: scale(1.5);
     background-image: url("../img/carousel/football-carousel-2-320x480.jpg");
   }
+}
+.logo-reversed {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.2;
 }
 .hero-text {
   position: absolute;

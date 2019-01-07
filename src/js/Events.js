@@ -32,7 +32,7 @@ class Events extends Component {
                 Furthermore we have had an endorsement of approval and support
                 from The Football Federation of Albania. The core purpose and
                 goal of this charity event is to raise funds for The SOS
-                orphanage Children of Albania and The Special Olympics Albania.
+                Orphanage Children of Albania and The Special Olympics Albania.
                 We also envisage to invite the global mega super star to join in
                 this magnificent charity event to sing in the national stadium.
               </p>
@@ -48,7 +48,7 @@ class Events extends Component {
               <p>
                 We are also organising a magnificent Gala Dinner Presentation
                 for the Albanian event which we are honoured will be hosted by
-                The Mayor and Municipality of Tirana.
+                The Mayor and Municipality of Tirana. The Gala Dinner Presentation will be heldat the wonderful 5 star Tirana Plaza Hotel.
               </p>
               <p>
                 Further information how to book and join these unique charity

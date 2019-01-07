@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../img/logo-white.svg";
 import Charity from "../img/charity-icon.svg";
 import Flag from "../img/flag-icon.svg";
 import Football from "../img/football-icon.svg";
@@ -12,7 +11,9 @@ import Sos from "../img/sos.png";
 import Olympics from "../img/special-olympics.png";
 import Idg from "../img/idg.png";
 import Play from "../img/playonpro.png";
-import LogoBlue from "../img/logo-blue.svg";
+import Logo from "../img/logo.svg";
+import LogoWhite from "../img/logo-white.svg";
+import LogoWhiteReversed from "../img/logo-white-reversed.svg";
 import ContactDetails from "./ContactDetails";
 import TestimonialsShort from "./TestimonialsShort";
 import Fade from "react-reveal/Fade";
@@ -38,6 +39,7 @@ class Home extends Component {
         <div className="carousel">
           <div className="slider-container" />
         </div>
+        <img src={LogoWhiteReversed} className="logo-reversed" alt="Eagle"/>
         <div className="hero-text">
           <Fade left>
             <h2>
@@ -58,7 +60,7 @@ class Home extends Component {
             <Fade left>
               <div className="grid-item home-logo">
                 <div className="home-container">
-                  <img src={Logo} alt="Eagle Golf Group logo" />
+                  <img src={LogoWhite} alt="Eagle Golf Group logo" />
                   <h2>Eagle Golf Group</h2>
                 </div>
               </div>
@@ -154,8 +156,7 @@ class Home extends Component {
                 <hr />
                 <h3>30 May - 02 June 2019</h3>
                 <p>
-                  Tirana Charity Football Stadium (Qemal Stefa) &amp; Hayat
-                  Regency Hotel
+                  Tirana Football Stadium (Qemal Stefa) and Tirana Plaza Hotel
                 </p>
               </div>
             </Fade>
@@ -225,7 +226,7 @@ class Home extends Component {
             <ContactDetails />
             <Fade right>
               <button className="grid-item contact-item-3 contact-button">
-                <img src={LogoBlue} alt="Logo" />
+                <img src={Logo} alt="Logo" />
                 <Link to="/contact">Send message</Link>
               </button>
             </Fade>
