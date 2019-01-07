@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import testimonials from "../data/testimonials.json";
+import Fade from "react-reveal/Fade";
 
 class Testimonials extends Component {
   constructor(props) {
     super(props);
     this.state = {
       testimonials: testimonials,
-      colors: ['#757A2F', '#677E20', '#677F10', '#273f29', '#14253f', '#091327']
+      colors: ["#757A2F", "#677E20", "#677F10", "#273f29", "#14253f", "#091327"]
     };
     this.toggleCollapsible = this.toggleCollapsible.bind(this);
   }
@@ -27,25 +28,42 @@ class Testimonials extends Component {
 
     return (
       <section id="testimonials" className="testimonial-container">
-        <header className="grid-item section-header testimonial-item-1">
-          <h2>Testimonials</h2>
-        </header>
+        <Fade left>
+          <header className="grid-item section-header testimonial-item-1">
+            <h2>Testimonials</h2>
+          </header>
+        </Fade>
 
         {testimonials.map(testimonial => (
-            <div className="testimonial-card" key={testimonial.name}>
-              <button className="collapsible" onClick={this.toggleCollapsible} style={{border: 'solid 10px' + randomColor, color: randomColor}}>
+          <div className="testimonial-card" key={testimonial.name}>
+            <Fade left delay={200}>
+              <button
+                className="collapsible"
+                onClick={this.toggleCollapsible}
+                style={{
+                  border: "solid 10px" + randomColor,
+                  color: randomColor
+                }}
+              >
                 <div className="avatar">
-                <img src={require(`../img/${testimonial.avatar}`)} alt="avatar" />
+                  <img
+                    src={require(`../img/${testimonial.avatar}`)}
+                    alt="avatar"
+                  />
                 </div>
-                <h2 style={{color: randomColor}}>{testimonial.name}</h2>
-                <h2 className="position" style={{color: randomColor}}>{testimonial.position}</h2>
-                <hr style={{border: 'solid 1px' + randomColor}} />
+                <h2 style={{ color: randomColor }}>{testimonial.name}</h2>
+                <h2 className="position" style={{ color: randomColor }}>
+                  {testimonial.position}
+                </h2>
+                <hr style={{ border: "solid 1px" + randomColor }} />
               </button>
-              <div className="content">
-                <p>{testimonial.testimonial}</p>
-              </div>
+            </Fade>
+
+            <div className="content">
+              <p>{testimonial.testimonial}</p>
             </div>
-          ))}
+          </div>
+        ))}
       </section>
     );
   }
