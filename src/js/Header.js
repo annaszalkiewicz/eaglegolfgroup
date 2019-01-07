@@ -36,7 +36,11 @@ class Header extends Component {
                 ? "rgba(39, 63, 41, 0.8)"
                 : window.location.pathname === "/partners"
                 ? "rgba(20, 37, 63, 0.8)"
-                : "rgba(9, 19, 39, 0.8)"
+                : "rgba(9, 19, 39, 0.8)",
+            boxShadow:
+              window.location.pathname !== "/"
+                ? "#9c9c9c 0px 10px 30px"
+                : "none"
           }}
         >
           <div className="logo">
