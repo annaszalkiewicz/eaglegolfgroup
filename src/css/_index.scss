@@ -681,7 +681,7 @@ footer {
   display: grid;
   margin: 15vh auto 0 auto;
   grid-template-columns: 300px;
-  grid-template-rows: 300px 1200px 300px;
+  grid-template-rows: 300px auto 300px;
   grid-gap: 1em;
   grid-template-areas:
     "eventsItem1"

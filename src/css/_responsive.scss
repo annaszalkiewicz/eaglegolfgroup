@@ -224,10 +224,11 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
   }
   .events-container {
     grid-template-columns: repeat(3, 300px);
-    grid-template-rows: 300px 310px;
+    grid-template-rows: reapeat(2, 300px) auto;
     grid-template-areas:
       "eventsItem1 eventsItem2 eventsItem2"
-      "eventsItem3 eventsItem2 eventsItem2";
+      "eventsItem3 eventsItem2 eventsItem2"
+      ". eventsItem2 eventsItem2";
     justify-content: center;
   }
   .event-item-1 h3 {
