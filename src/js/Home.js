@@ -14,6 +14,7 @@ import Idg from "../img/idg.png";
 import Play from "../img/playonpro.png";
 import LogoBlue from "../img/logo-blue.svg";
 import ContactDetails from "./ContactDetails";
+import TestimonialsShort from "./TestimonialsShort";
 
 class Home extends Component {
   constructor(props) {
@@ -139,52 +140,7 @@ class Home extends Component {
             <header className="grid-item section-header testimonials-header">
               <h2>Testimonials</h2>
             </header>
-            <div className="grid-item testimonials-item-1">
-              <div className="left">
-                <i className="material-icons left-arrow" onClick={this.onLeftArrowClick}>keyboard_arrow_left</i>
-              </div>
-              <div className="testimonials-container">
-                <i className="material-icons quote-icon">format_quote</i>
-                <div className="slideshow-container">
-                  <div className="mySlides fade" style={{display: 'block'}}>
-                    <p>
-                      Just a brief note to thank you for a wonderful few days
-                      investigating what Cyprus has to offer golfers. I was not
-                      only enormously impressed with what I saw but also with
-                      the careful and well organised arrangements you made. It
-                      must have taken a huge effort to put together such a
-                      hectic itinerary but it was well worth it as it s
-                      important to see as much as possible in a short space of
-                      time...
-                    </p>
-                  </div>
-
-                  <div className="mySlides fade">
-                    <p>
-                      May I take this opportunity to congratulate you John and
-                      your team on a job well done. We shall be happy to review
-                      any future press visits that you may wish to organize and
-                      involve Columbia.
-                    </p>
-                  </div>
-
-                  <div className="mySlides fade">
-                    <p>
-                      My team and I would like to thank you for bringing to our
-                      hotel and resort this group of golf media specialists and
-                      sincerely hope that the write ups of the impression made
-                      will create the positive awareness needed to boost our 5
-                      star property.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="right">
-                <i className="material-icons right-arrow" onClick={this.onRightArrowClick}>
-                  keyboard_arrow_right
-                </i>
-              </div>
-            </div>
+            <TestimonialsShort />
             <button className="grid-item testimonials-button">
               <Link to="/testimonials">Read more testimonials</Link>
             </button>
