@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Fade from "react-reveal/Fade";
 
 class TestimonialsShort extends Component {
   render() {
-
     const settings = {
       arrows: true,
       autoplay: true,
@@ -15,7 +15,8 @@ class TestimonialsShort extends Component {
     };
 
     return (
-      <div className="grid-item testimonials-item-1">
+      <Fade right>
+        <div className="grid-item testimonials-item-1">
           <i className="material-icons quote-icon">format_quote</i>
           <Slider {...settings}>
             <div>
@@ -47,7 +48,8 @@ class TestimonialsShort extends Component {
               </p>
             </div>
           </Slider>
-      </div>
+        </div>
+      </Fade>
     );
   }
 }
