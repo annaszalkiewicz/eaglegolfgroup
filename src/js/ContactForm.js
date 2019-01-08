@@ -5,6 +5,7 @@ class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.onHandleSbumit = this.onHandleSbumit.bind(this);
+    this.resetForm = this.resetForm.bind(this);
   }
 
   onHandleSbumit = e => {
@@ -27,15 +28,25 @@ class ContactForm extends Component {
     }).then(response => {
       if (response.data.msg === "success") {
         alert("Message Sent.");
+        this.resetForm();
       } else if (response.data.msg === "fail") {
         alert("Message failed to send.");
       }
     });
   };
 
+  resetForm = () => {
+    document.getElementById("contact-form").reset();
+  };
+
   render() {
     return (
-      <form className="contact-form" onClick={this.onHandleSbumit}>
+      <form
+        className="contact-form"
+        id="contact-form"
+        onClick={this.onHandleSbumit}
+        method="POST"
+      >
         <label htmlFor="first-name">Name*</label>
         <input
           type="text"
