@@ -56,7 +56,7 @@ class Events extends Component {
               <p>
                 We are also organising a magnificent Gala Dinner Presentation
                 for the Albanian event which we are honoured will be hosted by
-                The Mayor and Municipality of Tirana. The Gala Dinner Presentation will be heldat the wonderful 5 star Tirana Plaza Hotel.
+                The Mayor and Municipality of Tirana. The Gala Dinner Presentation will be held at the prestigous 5 star Tirana Plaza Hotel.
               </p>
               <p>
                 Further information how to book and join these unique charity
