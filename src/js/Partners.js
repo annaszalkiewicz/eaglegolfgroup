@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MetaTags from "react-meta-tags";
 import Idg from "../img/idg.png";
 import Play from "../img/playonpro.png";
 import Fade from "react-reveal/Fade";
@@ -7,6 +8,13 @@ class Partners extends Component {
   render() {
     return (
       <section id="partners" className="our-partners-container">
+        <MetaTags>
+          <title>Our Partners | Eagle Golf Group</title>
+          <meta
+            name="description"
+            content="Eagle Golf Group co-operates with International Golf Design and Playonpro to provide its services on the highest level."
+          />
+        </MetaTags>
         <Fade left>
           <header className="grid-item section-header our-partners-item-1">
             <h2>Our Partners</h2>

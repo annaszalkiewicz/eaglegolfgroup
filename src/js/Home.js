@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import MetaTags from "react-meta-tags";
 import Charity from "../img/charity-icon.svg";
 import Flag from "../img/flag-icon.svg";
 import Football from "../img/football-icon.svg";
@@ -36,6 +37,13 @@ class Home extends Component {
   render() {
     return (
       <div className="container" id="home">
+        <MetaTags>
+          <title>Home | Eagle Golf Group</title>
+          <meta
+            name="description"
+            content="Eagle Golf Group specializes in organizing celebrity charity sporting events, especially golf and football events. "
+          />
+        </MetaTags>
         <div className="carousel">
           <div className="slider-container" />
         </div>

@@ -2,11 +2,19 @@ import React, { Component } from "react";
 import Sos from "../img/sos.png";
 import Olympics from "../img/special-olympics.png";
 import Fade from "react-reveal/Fade";
+import MetaTags from "react-meta-tags";
 
 class Events extends Component {
   render() {
     return (
       <section id="events">
+        <MetaTags>
+          <title>Events | Eagle Golf Group</title>
+          <meta
+            name="description"
+            content="Eagle Golf Group is working hard in partnership with The National Culture and Tourist Board of Albania and together with both Governments for a magnificent charity Football event in Albania."
+          />
+        </MetaTags>
         <div className="events-container">
           <Fade left>
             <header className="grid-item events-item-1 section-header">

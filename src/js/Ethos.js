@@ -1,10 +1,18 @@
 import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
+import MetaTags from "react-meta-tags";
 
 class Ethos extends Component {
   render() {
     return (
       <section id="ethos">
+        <MetaTags>
+          <title>Our Ethos | Eagle Golf Group</title>
+          <meta
+            name="description"
+            content="Eagle Golf Group remains a consistent leader throughout the past years in golf tourism and awareness of new golf destinations."
+          />
+        </MetaTags>
         <div className="ethos-container">
           <Fade right>
             <header className="grid-item ethos-item-1 section-header">

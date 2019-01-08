@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MetaTags from "react-meta-tags";
 import ContactDetails from "./ContactDetails";
 import Fade from "react-reveal/Fade";
 
@@ -6,6 +7,13 @@ class Contact extends Component {
   render() {
     return (
       <section id="contact" className="contact-container">
+        <MetaTags>
+          <title>Contact Us | Eagle Golf Group</title>
+          <meta
+            name="description"
+            content="Contact Eagle Golf Group by email, phone or fill contact form on website."
+          />
+        </MetaTags>
         <Fade right>
           <header className="grid-item section-header contact-us-item-1">
             <h2>Contact Us</h2>

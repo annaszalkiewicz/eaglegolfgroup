@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MetaTags from "react-meta-tags";
 import testimonials from "../data/testimonials.json";
 import Fade from "react-reveal/Fade";
 
@@ -28,6 +29,13 @@ class Testimonials extends Component {
 
     return (
       <section id="testimonials" className="testimonial-container">
+        <MetaTags>
+          <title>Testimonials | Eagle Golf Group</title>
+          <meta
+            name="description"
+            content="Eagle Golf Group provies services on the highest level. Read what our clients says about us."
+          />
+        </MetaTags>
         <Fade left>
           <header className="grid-item section-header testimonial-item-1">
             <h2>Testimonials</h2>
