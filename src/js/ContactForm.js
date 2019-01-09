@@ -4,11 +4,11 @@ import axios from "axios";
 class ContactForm extends Component {
   constructor(props) {
     super(props);
-    this.onHandleSbumit = this.onHandleSbumit.bind(this);
+    this.onHandleSubmit = this.onHandleSubmit.bind(this);
     this.resetForm = this.resetForm.bind(this);
   }
 
-  onHandleSbumit = e => {
+  onHandleSubmit = e => {
     e.preventDefault();
     const firstName = document.getElementById("first-name").value;
     const lastName = document.getElementById("last-name").value;
@@ -17,7 +17,7 @@ class ContactForm extends Component {
     const message = document.getElementById("message").value;
     axios({
       method: "POST",
-      url: "http://localhost:3000/send",
+      url: "/send",
       data: {
         firstName: firstName,
         lastName: lastName,
@@ -46,20 +46,21 @@ class ContactForm extends Component {
         id="contact-form"
         onClick={this.onHandleSbumit}
         method="POST"
+        action="/send"
       >
-        <label htmlFor="first-name">Name*</label>
+        <label htmlFor="name">Name*</label>
         <input
           type="text"
-          name="first-name"
-          id="first-name"
+          name="name"
+          id="name"
           placeholder="Your name"
           required
         />
-        <label htmlFor="last-name">Last name</label>
+        <label htmlFor="surname">Last name</label>
         <input
           type="text"
-          name="last-name"
-          id="last-name"
+          name="surname"
+          id="surname"
           placeholder="Your last name"
         />
         <label htmlFor="email">E-mail*</label>
