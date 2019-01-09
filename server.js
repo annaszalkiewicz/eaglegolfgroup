@@ -56,7 +56,7 @@ app.post("/send", (req, res, next) => {
 
   var mail = {
     from: `${email}`,
-    to: "info@eaglegolfgroup.co.uk", //Change to email address that you want to receive messages on
+    to: "johnwade@eaglegolfgroup.co.uk", //Change to email address that you want to receive messages on
     subject: "New Message from Contact Form",
     text: `${content}`
   };
