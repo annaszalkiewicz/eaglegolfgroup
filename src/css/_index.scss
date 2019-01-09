@@ -213,11 +213,12 @@ main {
 }
 .home-logo {
   grid-area: homeLogo;
-  background-color: $color-1;
+  background-color: $color-7;
   padding: 1em;
+  border: solid 10px $color-1;
+  overflow: hidden;
 }
 .home-container {
-  border: solid 3px $white-color;
   img {
     height: 9em;
     margin: 2em auto 1em 50%;
@@ -225,7 +226,7 @@ main {
   }
   h2 {
     text-align: center;
-    color: #fff;
+    color: $color-1;
     font-family: $heading-font;
     font-size: 1.8em;
     margin-bottom: 1em;
