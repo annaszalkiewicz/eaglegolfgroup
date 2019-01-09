@@ -80,10 +80,10 @@ class ContactForm extends Component {
           required
         />
         <label htmlFor="message">Message*</label>
-        <input
-          type="text"
+        <textarea
           name="message"
           id="message"
+          rows="5"
           placeholder="Write your message"
           required
         />

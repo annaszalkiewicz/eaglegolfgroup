@@ -924,7 +924,7 @@ footer {
     font-size: 1em;
     margin: 1em 0;
   }
-  input {
+  input, textarea {
     background: transparent;
     border-top: none;
     border-right: none;
@@ -935,6 +935,8 @@ footer {
   }
 }
 ::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
   font-style: italic;
   text-align: right;
   margin-bottom: 0.5em;
