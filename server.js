@@ -17,6 +17,7 @@ app.use(
 app.use(bodyParser.json());
 
 app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
   res.send('Server is working. Please post at "/send" to submit a message.');
 });
 
