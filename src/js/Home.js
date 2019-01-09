@@ -13,7 +13,6 @@ import Olympics from "../img/special-olympics.png";
 import Idg from "../img/idg.png";
 import Play from "../img/playonpro.png";
 import Logo from "../img/logo.svg";
-import LogoWhite from "../img/logo-white.svg";
 import LogoWhiteReversed from "../img/logo-white-reversed.svg";
 import ContactDetails from "./ContactDetails";
 import TestimonialsShort from "./TestimonialsShort";
@@ -68,7 +67,7 @@ class Home extends Component {
             <Fade left>
               <div className="grid-item home-logo">
                 <div className="home-container">
-                  <img src={LogoWhite} alt="Eagle Golf Group logo" />
+                  <img src={Logo} alt="Eagle Golf Group logo" />
                   <h2>Eagle Golf Group</h2>
                 </div>
               </div>
