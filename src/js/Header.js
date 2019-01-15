@@ -54,6 +54,7 @@ class Header extends Component {
               <i
                 className="material-icons hamburger-menu"
                 onClick={this.onClickHandler}
+                onMouseEnter={this.onClickHandler}
               >
                 menu
               </i>
