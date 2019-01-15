@@ -37,7 +37,7 @@ class Home extends Component {
     return (
       <div className="container" id="home">
         <MetaTags>
-          <title>Home | Eagle Golf Group</title>
+          <title>Eagle Golf Group | Charity Sporting Events | Golf Events | Football Events</title>
           <meta
             name="description"
             content="Eagle Golf Group specializes in organizing celebrity charity sporting events, especially golf and football events. "
