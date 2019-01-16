@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 class Partners extends Component {
   render() {
     return (
-      <section id="partners" className="our-partners-container">
+      <main id="partners main-content" className="our-partners-container">
         <MetaTags>
           <title>Our Partners | Eagle Golf Group</title>
           <meta
@@ -100,7 +100,7 @@ class Partners extends Component {
             </a>
           </button>
         </Fade>
-      </section>
+      </main>
     );
   }
 }

@@ -7,7 +7,7 @@ import ContactForm from "./ContactForm";
 class Contact extends Component {
   render() {
     return (
-      <section id="contact" className="contact-container">
+      <main id="contact main-content" className="contact-container">
         <MetaTags>
           <title>Contact Us | Eagle Golf Group</title>
           <meta
@@ -28,7 +28,7 @@ class Contact extends Component {
             <ContactForm />
           </div>
         </Fade>
-      </section>
+      </main>
     );
   }
 }

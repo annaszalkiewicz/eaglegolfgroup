@@ -28,7 +28,7 @@ class Testimonials extends Component {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
     return (
-      <section id="testimonials" className="testimonial-container">
+      <main id="testimonials main-content" className="testimonial-container">
         <MetaTags>
           <title>Testimonials | Eagle Golf Group</title>
           <meta
@@ -72,7 +72,7 @@ class Testimonials extends Component {
             </div>
           </div>
         ))}
-      </section>
+      </main>
     );
   }
 }

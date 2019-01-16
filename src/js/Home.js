@@ -43,6 +43,9 @@ class Home extends Component {
             content="Eagle Golf Group specializes in organizing celebrity charity sporting events, especially golf and football events. "
           />
         </MetaTags>
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
         <div className="carousel">
           <div className="slider-container" />
         </div>

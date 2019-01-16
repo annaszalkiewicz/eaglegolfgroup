@@ -15,7 +15,7 @@ class Events extends Component {
             content="Eagle Golf Group is working hard in partnership with The National Culture and Tourist Board of Albania and together with both Governments for a magnificent charity Football event in Albania."
           />
         </MetaTags>
-        <div className="events-container">
+        <main className="events-container" id="main-content">
           <Fade left>
             <header className="grid-item events-item-1 section-header">
               <h2>Events</h2>
@@ -75,7 +75,7 @@ class Events extends Component {
               />
             </div>
           </Fade>
-        </div>
+        </main>
       </section>
     );
   }

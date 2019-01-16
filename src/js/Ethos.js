@@ -13,7 +13,7 @@ class Ethos extends Component {
             content="Eagle Golf Group remains a consistent leader throughout the past years in golf tourism and awareness of new golf destinations."
           />
         </MetaTags>
-        <div className="ethos-container">
+        <main className="ethos-container" id="main-content">
           <Fade right>
             <header className="grid-item ethos-item-1 section-header">
               <h2>Our Ethos</h2>
@@ -67,7 +67,7 @@ class Ethos extends Component {
               <p>Motivation</p>
             </div>
           </Fade>
-        </div>
+        </main>
       </section>
     );
   }
