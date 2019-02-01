@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Sos from "../img/sos.png";
 import Olympics from "../img/special-olympics.png";
 import Fade from "react-reveal/Fade";
@@ -74,6 +75,13 @@ class Events extends Component {
                 className="olympics"
               />
             </div>
+          </Fade>
+          <Fade left delay={600}>
+            <button className="grid-item events-item-4">
+              <Link to="/tirana-charity-football-event">
+              Learn more about our next event
+              </Link>
+            </button>
           </Fade>
         </main>
       </section>
