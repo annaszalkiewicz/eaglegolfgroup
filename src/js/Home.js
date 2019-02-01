@@ -182,7 +182,7 @@ class Home extends Component {
             </Fade>
             <Fade right>
               <button className="grid-item event-button event-item-4">
-                <Link to="/events">Learn more about events</Link>
+                <Link to="/tirana-charity-football-event">Learn more about this goodwill event</Link>
               </button>
             </Fade>
             <Fade left>
