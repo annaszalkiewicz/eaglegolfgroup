@@ -8,6 +8,7 @@ import Events from "./Events";
 import Testimonials from "./Testimonials";
 import Partners from "./Partners";
 import Contact from "./Contact";
+import TiranaEvent from "./TiranaEvent";
 
 class App extends Component {
   render() {
@@ -48,6 +49,11 @@ class App extends Component {
         <Route
           path={process.env.PUBLIC_URL + "/contact"}
           render={() => <Contact />}
+        />
+
+        <Route
+          path={process.env.PUBLIC_URL + "/tirana-charity-football-event"}
+          render={() => <TiranaEvent />}
         />
 
         <Footer />
