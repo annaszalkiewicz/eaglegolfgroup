@@ -77,7 +77,7 @@ class Events extends Component {
             </div>
           </Fade>
           <Fade left delay={600}>
-            <button className="grid-item events-item-4">
+            <button className="grid-item events-item-4 event-button">
               <Link to="/tirana-charity-football-event">
               Learn more about our next event
               </Link>
