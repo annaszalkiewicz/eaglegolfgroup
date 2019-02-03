@@ -52,7 +52,7 @@ class App extends Component {
         />
 
         <Route
-          path={process.env.PUBLIC_URL + "/tirana-charity-football-event"}
+          path={process.env.PUBLIC_URL + "/albania-charity-football-event-2019"}
           render={() => <TiranaEvent />}
         />
 
