@@ -17,14 +17,14 @@ class TiranaEvent extends Component {
 
           <TabPanel className="tab-panel">
             <section className="tirana-about-grid-container">
-              <div className="about-grid-item-1">What?</div>
-              <div className="about-grid-item-2">Celebrity Charity Football Event</div>
-              <div className="about-grid-item-3">When?</div>
-              <div className="about-grid-item-4">30 May - 02 June 2019</div>
-              <div className="about-grid-item-5">Where?</div>
-              <div className="about-grid-item-6">Tirana Football Stadium (Qemal Stefa) and Tirana Plaza Hotel</div>
-              <div className="about-grid-item-7">Goal</div>
-              <div className="about-grid-item-8">Raising funds for SOS Children's Villages and Special Olympics Albania</div>
+              <div className="about-grid-item-1 grid-item about-header-1">What?</div>
+              <div className="about-grid-item-2 grid-item">Celebrity Charity Football Event</div>
+              <div className="about-grid-item-3 grid-item about-header-2">When?</div>
+              <div className="about-grid-item-4 grid-item">30 May - 02 June 2019</div>
+              <div className="about-grid-item-5 grid-item about-header-3">Where?</div>
+              <div className="about-grid-item-6 grid-item">Tirana Football Stadium (Qemal Stefa) and Tirana Plaza Hotel</div>
+              <div className="about-grid-item-7 grid-item about-header-4">Goal</div>
+              <div className="about-grid-item-8 grid-item">Raising funds for SOS Children's Villages and Special Olympics Albania</div>
             </section>
           </TabPanel>
 

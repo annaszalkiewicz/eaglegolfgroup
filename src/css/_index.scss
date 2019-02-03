@@ -980,9 +980,58 @@ footer {
   li {
     cursor: pointer;
     padding: 1em;
+    &:hover {
+      background-color: $color-2;
+      color: #fff;
+      transition: all .6s ease;
+    }
+  }
+}
+.tirana-about-grid-container {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: repeat(8, 300px);
+  grid-template-areas: "aboutGridItem1"
+  "aboutGridItem2"
+  "aboutGridItem3"
+  "aboutGridItem4"
+  "aboutGridItem5"
+  "aboutGridItem6"
+  "aboutGridItem7"
+  "aboutGridItem8";
+  grid-gap: 1em;
+  justify-content: center;
+}
+
+@for $i from 1 through 8 {
+  .about-grid-item-#{$i} {
+    grid-area: aboutGridItem#{$i};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    font-size: 1.5em;
   }
 }
 
+@for $i from 1 through 4 {
+  .about-header-#{$i} {
+    color: #fff;
+  }
+}
+.about-header-1 {
+  background-color: $color-2;
+}
+.about-header-2 {
+  background-color: $color-3;
+}
+.about-header-3 {
+  background-color: $color-4;
+}
+.about-header-4 {
+  background-color: $color-5;
+}
 // Skip link
 
 .skip-link {
