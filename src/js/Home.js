@@ -37,7 +37,10 @@ class Home extends Component {
     return (
       <div className="container" id="home">
         <MetaTags>
-          <title>Eagle Golf Group | Charity Sporting Events | Golf Events | Football Events</title>
+          <title>
+            Eagle Golf Group | Charity Sporting Events | Golf Events | Football
+            Events
+          </title>
           <meta
             name="description"
             content="Eagle Golf Group specializes in organizing celebrity charity sporting events, especially golf and football events. "
@@ -49,7 +52,7 @@ class Home extends Component {
         <div className="carousel">
           <div className="slider-container" />
         </div>
-        <img src={LogoWhiteReversed} className="logo-reversed" alt="Eagle"/>
+        <img src={LogoWhiteReversed} className="logo-reversed" alt="Eagle" />
         <div className="hero-text">
           <Fade left>
             <h2>
@@ -58,11 +61,9 @@ class Home extends Component {
             </h2>
           </Fade>
           <Fade right>
-            <button className="btn-primary">
-              <Link to="/contact">
+              <Link to="/contact" className="btn-primary button-carousel" role="button">
                 Contact Us <i className="material-icons btn-carousel">send</i>
               </Link>
-            </button>
           </Fade>
         </div>
         <main>
@@ -151,9 +152,9 @@ class Home extends Component {
               </div>
             </Fade>
             <Fade right>
-              <button className="grid-item goals-button goals-item-8">
-                <Link to="/ethos">Learn more about us</Link>
-              </button>
+              <div className="grid-item goals-button goals-item-8">
+                <Link to="/ethos" role="button">Learn more about us</Link>
+              </div>
             </Fade>
             <Fade left>
               <header className="grid-item section-header events-header">
@@ -181,9 +182,11 @@ class Home extends Component {
               </div>
             </Fade>
             <Fade right>
-              <button className="grid-item event-button event-item-4">
-                <Link to="/tirana-charity-football-event">Learn more about this goodwill event</Link>
-              </button>
+              <div className="grid-item event-button event-item-4">
+                <Link to="/albania-charity-football-event-2019" role="button">
+                  Learn more about this goodwill event
+                </Link>
+              </div>
             </Fade>
             <Fade left>
               <header className="grid-item section-header testimonials-header">
@@ -192,9 +195,9 @@ class Home extends Component {
             </Fade>
             <TestimonialsShort />
             <Fade left>
-              <button className="grid-item testimonials-button">
-                <Link to="/testimonials">Read more testimonials</Link>
-              </button>
+              <div className="grid-item testimonials-button">
+                <Link to="/testimonials" role="button">Read more testimonials</Link>
+              </div>
             </Fade>
             <Fade left>
               <header className="grid-item section-header partners-item-1">
@@ -224,9 +227,9 @@ class Home extends Component {
               </div>
             </Fade>
             <Fade right>
-              <button className="grid-item partners-item-4 partners-button">
-                <Link to="/partners">Learn more about our partners</Link>
-              </button>
+              <div className="grid-item partners-item-4 partners-button">
+                <Link to="/partners" role="button">Learn more about our partners</Link>
+              </div>
             </Fade>
             <Fade left>
               <header className="grid-item section-header contact-item-1">
@@ -235,10 +238,10 @@ class Home extends Component {
             </Fade>
             <ContactDetails />
             <Fade right>
-              <button className="grid-item contact-item-3 contact-button">
+              <div className="grid-item contact-item-3 contact-button">
                 <img src={Logo} alt="Logo" />
-                <Link to="/contact">Send message</Link>
-              </button>
+                <Link to="/contact" role="button">Send message</Link>
+              </div>
             </Fade>
           </div>
         </main>
