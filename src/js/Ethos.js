@@ -38,8 +38,8 @@ class Ethos extends Component {
                 Eagle Golf Group of Companies.
               </p>
               <p>
-                Eagle Golf Group …..”a bird’s eye view on celebrity charity
-                sporting events”
+                Eagle Golf Group …”a bird’s eye view on celebrity charity
+                sporting events. We are what we do.”
               </p>
             </div>
           </Fade>

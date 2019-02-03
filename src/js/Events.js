@@ -32,14 +32,12 @@ class Events extends Component {
                 tour event for May 2019. The Management Team of Eagle Golf are
                 currently working hard in partnership with The National Culture
                 and Tourist Board of Albania and together with both Governments
-                for a magnificent charity Football event in Albania. The
-                confirmed dates are 30 May – 02 June 2019. The event has been
-                already been endorsed and supported by both British and Albanian
-                Ambassadors Government dignitaries.
+                for a magnificent charity Football event in Albania. We are delighted to confirm the dates for this magnificent event are 30 May – 02 June 2019. The event has been
+                already endorsed and supported by both Albanian and British Ambassadors together with Government dignitaries.
               </p>
               <p>
-                Furthermore we have had an endorsement of approval and support
-                from The Football Federation of Albania. The core purpose and
+                Furthermore, we have had an endorsement of approval and support
+                from The Football Federation of Albania. The core purpose and main
                 goal of this charity event is to raise funds for The SOS
                 Orphanage Children of Albania and The Special Olympics Albania.
                 We also envisage to invite the global mega super star to join in
@@ -48,7 +46,7 @@ class Events extends Component {
               <p>
                 This magnificent good cause charity football event will be
                 schedule around the opening of the new and spectacular national
-                football stadium recently been endorsed by FIFA.
+                football stadium recently been endorsed by UEFA.
               </p>
               <p>
                 The charity football match will be against Former Albanian

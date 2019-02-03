@@ -33,7 +33,7 @@ class Partners extends Component {
               creation of world class golf developments including building
               architecture, master planning landscape architecture and golf
               course design throughout the world. From initial concept work to
-              the delivery of entire resorts, project promotion and project
+              the delivery of entire golf resorts together with project promotion and project
               management.
             </p>
           </div>
