@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
+import Jessie from '../img/jessie-j.jpg';
+
 class TiranaEvent extends Component {
 
   render() {
@@ -29,7 +31,27 @@ class TiranaEvent extends Component {
           </TabPanel>
 
           <TabPanel className="tab-panel">
-            Program tab is working!
+            <section className="tirana-program-grid-container">
+              <div className="program-grid-item-1 grid-item">01 June 2019</div>
+              <div className="program-grid-item-2 grid-item">Tirana Football Stadium (Qemal Stefa)</div>
+              <div className="program-grid-item-3 grid-item">
+                <p>16:00</p>
+                <p>Pre-match Entertainment Program including performance by international superstar - Jessie J</p>
+              </div>
+              <div className="program-grid-item-4 grid-item">
+                <img src={Jessie} alt="Jessie J"/>
+              </div>
+              <div className="program-grid-item-5 grid-item">
+                <p>18:00</p>
+                <p>Football match between former Albanian legends and former England legends</p>
+              </div>
+              <div className="program-grid-item-6 grid-item">Tirana Plaza Hotel</div>
+              <div className="program-grid-item-7 grid-item">
+                <p>21:00</p>
+                <p>Charity Presentation Gala Dinner</p>
+              </div>
+
+            </section>
           </TabPanel>
 
           <TabPanel className="tab-panel">
