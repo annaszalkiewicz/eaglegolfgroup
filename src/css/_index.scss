@@ -976,7 +976,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   font-family: $heading-font;
-  font-size: 1.5em;
+  font-size: 1em;
   li {
     cursor: pointer;
     padding: 1em;
@@ -990,7 +990,7 @@ footer {
 .tirana-about-grid-container {
   display: grid;
   grid-template-columns: 300px;
-  grid-template-rows: repeat(8, 300px);
+  grid-template-rows: repeat(8, 200px);
   grid-template-areas: "aboutGridItem1"
   "aboutGridItem2"
   "aboutGridItem3"
@@ -1032,6 +1032,40 @@ footer {
 .about-header-4 {
   background-color: $color-5;
 }
+.tirana-program-grid-container {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: repeat(3, 200px) auto repeat(3,200px);
+  grid-template-areas: "programGridItem1"
+  "programGridItem2"
+  "programGridItem3"
+  "programGridItem4"
+  "programGridItem5"
+  "programGridItem6"
+  "programGridItem7";
+  grid-gap: 1em;
+  justify-content: center;
+}
+@for $i from 1 through 7 {
+  .program-grid-item-#{$i} {
+    grid-area: programGridItem#{$i};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
+}
+.program-grid-item-4 {
+  border: solid 20px #000;
+  padding: 0;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
 // Skip link
 
 .skip-link {
