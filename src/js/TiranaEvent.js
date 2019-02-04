@@ -93,7 +93,7 @@ class TiranaEvent extends Component {
               </Fade>
               <Fade right delay={400}>
                 <div className="program-grid-item-3 grid-item">
-                  <p>16:00</p>
+                  <p><strong>16:00</strong></p>
                   <p>
                     Pre-match Entertainment Program including performance by
                     international superstar - Jessie J
@@ -107,7 +107,7 @@ class TiranaEvent extends Component {
               </Fade>
               <Fade right delay={800}>
                 <div className="program-grid-item-5 grid-item">
-                  <p>18:00</p>
+                  <p><strong>18:00</strong></p>
                   <p>
                     Football match between former Albanian legends and former
                     England legends
@@ -121,7 +121,7 @@ class TiranaEvent extends Component {
               </Fade>
               <Fade right delay={1200}>
                 <div className="program-grid-item-7 grid-item">
-                  <p>21:00</p>
+                  <p><strong>21:00</strong></p>
                   <p>Charity Presentation Gala Dinner</p>
                 </div>
               </Fade>
