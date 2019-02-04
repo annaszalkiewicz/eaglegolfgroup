@@ -6,9 +6,23 @@ import Klosi from "../img/blendi-klosi.jpg";
 import Veliaj from "../img/erion-veliaj.jpg";
 import Plaza from '../img/plaza-tirana.png';
 import Birra from '../img/birra-stela.svg';
+import endorsements from '../data/endorsements.json';
 
 class TiranaEvent extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      endorsements: endorsements,
+      colors: ["#757A2F", "#677E20", "#677F10", "#273f29", "#14253f", "#091327"]
+    };
+  }
+
   render() {
+    const { toggleCollapsible } = this.props;
+    const { colors } = this.state;
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
     return (
       <main id="tirana-event" className="tirana-event">
         <Tabs>
@@ -116,7 +130,36 @@ class TiranaEvent extends Component {
           </TabPanel>
 
           <TabPanel className="tab-panel">
-            Endorsements tab is working!
+            <div className="endorsements-grid-container">
+            {endorsements.map(endorsement => (
+          <div className="testimonial-card  endorsement-card" key={endorsement.name}>
+              <button
+                className="collapsible"
+                onClick={toggleCollapsible}
+                style={{
+                  border: "solid 10px" + randomColor,
+                  color: randomColor
+                }}
+              >
+                <div className="avatar">
+                  <img
+                    src={require(`../img/${endorsement.avatar}`)}
+                    alt="avatar"
+                  />
+                </div>
+                <h2 style={{ color: randomColor }}>{endorsement.name}</h2>
+                <h2 className="position" style={{ color: randomColor }}>
+                  {endorsement.position}
+                </h2>
+                <hr style={{ border: "solid 1px" + randomColor }} />
+              </button>
+
+            <div className="content">
+              <p>{endorsement.testimonial}</p>
+            </div>
+          </div>
+        ))}
+            </div>
           </TabPanel>
         </Tabs>
       </main>
