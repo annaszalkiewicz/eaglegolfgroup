@@ -980,12 +980,18 @@ footer {
   li {
     cursor: pointer;
     padding: 1em;
+    color: $color-4;
+    font-weight: bold;
     &:hover {
       background-color: $color-2;
       color: #fff;
       transition: all .6s ease;
     }
   }
+}
+.react-tabs__tab--selected {
+  background-color: $color-4;
+  color: #fff !important;
 }
 .tirana-about-grid-container {
   display: grid;
