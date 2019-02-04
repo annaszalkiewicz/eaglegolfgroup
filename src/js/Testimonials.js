@@ -10,20 +10,10 @@ class Testimonials extends Component {
       testimonials: testimonials,
       colors: ["#757A2F", "#677E20", "#677F10", "#273f29", "#14253f", "#091327"]
     };
-    this.toggleCollapsible = this.toggleCollapsible.bind(this);
   }
 
-  toggleCollapsible = e => {
-    e.target.classList.toggle("active-testimonial");
-    const content = e.target.nextElementSibling;
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  };
-
   render() {
+    const { toggleCollapsible } = this.props;
     const { testimonials, colors } = this.state;
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
@@ -47,7 +37,7 @@ class Testimonials extends Component {
             <Fade left delay={200}>
               <button
                 className="collapsible"
-                onClick={this.toggleCollapsible}
+                onClick={toggleCollapsible}
                 style={{
                   border: "solid 10px" + randomColor,
                   color: randomColor

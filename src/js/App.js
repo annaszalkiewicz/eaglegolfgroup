@@ -11,6 +11,22 @@ import Contact from "./Contact";
 import TiranaEvent from "./TiranaEvent";
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.toggleCollapsible = this.toggleCollapsible.bind(this);
+  }
+
+  toggleCollapsible = e => {
+    e.target.classList.toggle("active-testimonial");
+    const content = e.target.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  };
+
   render() {
     return (
       <div className="App">
@@ -38,7 +54,7 @@ class App extends Component {
 
         <Route
           path={process.env.PUBLIC_URL + "/testimonials"}
-          render={() => <Testimonials />}
+          render={() => <Testimonials toggleCollapsible= {this.toggleCollapsible}  />}
         />
 
         <Route
