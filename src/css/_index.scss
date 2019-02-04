@@ -1046,6 +1046,7 @@ footer {
   "programGridItem7";
   grid-gap: 1em;
   justify-content: center;
+  margin: 1em auto;
 }
 @for $i from 1 through 7 {
   .program-grid-item-#{$i} {
@@ -1061,8 +1062,8 @@ footer {
   border: solid 20px #000;
   padding: 0;
   img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     object-fit: cover;
   }
 }
@@ -1076,6 +1077,7 @@ footer {
   "sponsorsGridItem4";
   justify-content: center;
   grid-gap: 1em;
+  margin: 1em auto;
 }
 @for $i from 1 to 5 {
   .sponsors-grid-item-#{$i} {
@@ -1085,6 +1087,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     padding: 1em;
+    text-align: center;
   }
 }
 .endorsements-grid-container {
