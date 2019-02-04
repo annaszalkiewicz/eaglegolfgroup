@@ -474,6 +474,19 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
       "contactUsItem3 contactUsItem3 contactUsItem1"
       "contactUsItem3 contactUsItem3 contactItem2";
   }
+  .tirana-about-grid-container {
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(4, 300px);
+  }
+  .tirana-program-grid-container {
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(4, 400px);  
+  }
+  .sponsors-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 400px);
+  }
 }
 
 // RESPONSIVE CAROUSEL
