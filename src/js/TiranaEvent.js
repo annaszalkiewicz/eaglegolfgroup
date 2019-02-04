@@ -162,8 +162,8 @@ class TiranaEvent extends Component {
                   <div className="avatar sponsors-avatar">
                     <img src={Birra} alt="avatar" />
                   </div>
-                  <p>Enzo Panteqi</p>
-                  <p>Senior Administrator of Birra Stela</p>
+                  <p>Stefan Pinguli</p>
+                  <p>C.E.O. of Birra Stela</p>
                 </div>
               </Fade>
             </div>
