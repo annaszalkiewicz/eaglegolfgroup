@@ -131,8 +131,8 @@ class TiranaEvent extends Component {
           <TabPanel className="tab-panel">
             <div className="sponsors-grid-container">
               <Fade left>
-                <div className="sponsors-grid-item-1 grid-item">
-                  <div className="avatar">
+                <div className="sponsors-grid-item-1 grid-item sponsors-item">
+                  <div className="avatar sponsors-avatar">
                     <img src={Klosi} alt="avatar" />
                   </div>
                   <p>Blendi Klosi</p>
@@ -140,8 +140,8 @@ class TiranaEvent extends Component {
                 </div>
               </Fade>
               <Fade right delay={200}>
-                <div className="sponsors-grid-item-2 grid-item">
-                  <div className="avatar">
+                <div className="sponsors-grid-item-2 grid-item sponsors-item">
+                  <div className="avatar sponsors-avatar">
                     <img src={Veliaj} alt="avatar" />
                   </div>
                   <p>Erion Veliaj</p>
@@ -149,8 +149,8 @@ class TiranaEvent extends Component {
                 </div>
               </Fade>
               <Fade left delay={400}>
-                <div className="sponsors-grid-item-3 grid-item">
-                  <div className="avatar">
+                <div className="sponsors-grid-item-3 grid-item sponsors-item">
+                  <div className="avatar sponsors-avatar">
                     <img src={Plaza} alt="avatar" />
                   </div>
                   <p>Erisa Male</p>
@@ -158,8 +158,8 @@ class TiranaEvent extends Component {
                 </div>
               </Fade>
               <Fade right delay={600}>
-                <div className="sponsors-grid-item-4 grid-item">
-                  <div className="avatar">
+                <div className="sponsors-grid-item-4 grid-item sponsors-item">
+                  <div className="avatar sponsors-avatar">
                     <img src={Birra} alt="avatar" />
                   </div>
                   <p>Enzo Panteqi</p>

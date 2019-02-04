@@ -1099,6 +1099,14 @@ footer {
     text-align: center;
   }
 }
+.sponsors-item {
+  border: solid 10px $color-5;
+  font-size: 1.5em;
+  color: $color-5;
+}
+.sponsors-avatar {
+  margin: 0 !important;
+}
 .endorsements-grid-container {
   display: flex;
   flex-direction: row;
