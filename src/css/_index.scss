@@ -1086,6 +1086,15 @@ footer {
     padding: 1em;
   }
 }
+.endorsements-grid-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.endorsement-card {
+  margin: 1em;
+}
 
 // Skip link
 
