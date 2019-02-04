@@ -1065,6 +1065,27 @@ footer {
     object-fit: cover;
   }
 }
+.sponsors-grid-container {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: repeat(4, 300px);
+  grid-template-areas: "sponsorsGridItem1"
+  "sponsorsGridItem2"
+  "sponsorsGridItem3"
+  "sponsorsGridItem4";
+  justify-content: center;
+  grid-gap: 1em;
+}
+@for $i from 1 to 5 {
+  .sponsors-grid-item-#{$i} {
+    grid-area: sponsorsGridItem#{$i};
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+  }
+}
 
 // Skip link
 
