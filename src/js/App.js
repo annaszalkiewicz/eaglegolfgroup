@@ -69,7 +69,7 @@ class App extends Component {
 
         <Route
           path={process.env.PUBLIC_URL + "/albania-charity-football-event-2019"}
-          render={() => <TiranaEvent />}
+          render={() => <TiranaEvent toggleCollapsible= {this.toggleCollapsible} />}
         />
 
         <Footer />
