@@ -16,10 +16,18 @@ app.use(
 
 app.use(bodyParser.json());
 
+app.use(function (req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+ });
+
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
   res.send('Server is working. Please post at "/send" to submit a message.');
 });
+
+
 
 app.listen(process.env.PORT || 8080);
 
@@ -57,7 +65,7 @@ app.post("/send", (req, res, next) => {
 
   var mail = {
     from: `${email}`,
-    to: "johnwade@eaglegolfgroup.co.uk", //Change to email address that you want to receive messages on
+    to: "info@eaglegolfgroup.co.uk", //Change to email address that you want to receive messages on
     subject: "New Message from Contact Form",
     text: `${content}`
   };
