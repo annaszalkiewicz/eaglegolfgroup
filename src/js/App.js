@@ -9,6 +9,7 @@ import Testimonials from "./Testimonials";
 import Partners from "./Partners";
 import Contact from "./Contact";
 import TiranaEvent from "./TiranaEvent";
+import Aqaba from "./Aqaba";
 
 class App extends Component {
 
@@ -70,6 +71,11 @@ class App extends Component {
         <Route
           path={process.env.PUBLIC_URL + "/albania-charity-football-event-2019"}
           render={() => <TiranaEvent toggleCollapsible= {this.toggleCollapsible} />}
+        />
+
+        <Route
+          path={process.env.PUBLIC_URL + "/jordan-charity-football-golf-event"}
+          render={() => <Aqaba />}
         />
 
         <Footer />
