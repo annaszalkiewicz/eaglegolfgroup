@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import Home from "./Home";
@@ -8,7 +8,6 @@ import Events from "./Events";
 import Testimonials from "./Testimonials";
 import Partners from "./Partners";
 import Contact from "./Contact";
-import TiranaEvent from "./TiranaEvent";
 import Aqaba from "./Aqaba";
 
 class App extends Component {
@@ -69,9 +68,11 @@ class App extends Component {
         />
 
         <Route
+        exact
           path={process.env.PUBLIC_URL + "/albania-charity-football-event-2019"}
-          render={() => <TiranaEvent toggleCollapsible= {this.toggleCollapsible} />}
-        />
+        >
+          <Redirect to="/jordan-charity-football-golf-event" />
+        </Route>
 
         <Route
           path={process.env.PUBLIC_URL + "/jordan-charity-football-golf-event"}
