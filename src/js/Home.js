@@ -8,15 +8,16 @@ import Golf from "../img/golf-icon.svg";
 import Dolar from "../img/monetization-icon.svg";
 import Tv from "../img/tv-icon.svg";
 import World from "../img/world-icon.svg";
-import Sos from "../img/sos.png";
-import Olympics from "../img/special-olympics.png";
+import Wfl from '../img/wfl.jpg';
 import Idg from "../img/idg.png";
-import Play from "../img/playonpro.png";
+import Embassy from "../img/jordanian-embassy.png";
+import Aqaba from '../img/aqaba-seza.jfif';
 import Logo from "../img/logo.svg";
 import LogoWhiteReversed from "../img/logo-white-reversed.svg";
 import ContactDetails from "./ContactDetails";
 import TestimonialsShort from "./TestimonialsShort";
 import Fade from "react-reveal/Fade";
+import Announcement from "./Announcement";
 
 class Home extends Component {
   constructor(props) {
@@ -49,6 +50,8 @@ class Home extends Component {
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>
+        <Announcement />
+
         <div className="carousel">
           <div className="slider-container" />
         </div>
@@ -59,6 +62,7 @@ class Home extends Component {
               A bird's eye view on the world of celebrity charity sporting
               events
             </h2>
+            
           </Fade>
           <Fade right>
               <Link to="/contact" className="btn-primary button-carousel" role="button">
@@ -163,27 +167,27 @@ class Home extends Component {
             </Fade>
             <Fade right>
               <div className="grid-item event-list event-item-1">
-                <h3>Celebrity Football Charity Event Tirana, Albania</h3>
+                <h3>Celebrity Football/Golf Charity Event Aqaba, Jordan</h3>
                 <hr />
-                <h3>30 May - 02 June 2019</h3>
+                <h3>Dates: TBA</h3>
                 <p>
-                  Tirana Football Stadium (Qemal Stefa) and Tirana Plaza Hotel
+                  Aqaba National Football Stadium and Hyatt Regency Hotel
                 </p>
               </div>
             </Fade>
             <Fade left>
               <div className="grid-item event-list event-item-2">
-                <img src={Sos} alt="SOS Children's Villages" />
+                <img src={Embassy} alt="Jordanian Embassy" />
               </div>
             </Fade>
             <Fade bottom>
               <div className="grid-item event-list event-item-3">
-                <img src={Olympics} alt="Special Olympics Albania" />
+                <img src={Aqaba} alt="Aqaba Special Economic Zone" />
               </div>
             </Fade>
             <Fade right>
               <div className="grid-item event-button event-item-4">
-                <Link to="/albania-charity-football-event-2019" role="button">
+                <Link to="/jordan-charity-football-golf-event" role="button">
                   Learn more about this goodwill event
                 </Link>
               </div>
@@ -217,13 +221,7 @@ class Home extends Component {
             </Fade>
             <Fade bottom>
               <div className="grid-item partners-item-3">
-                <a
-                  href="http://playonpro.net/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={Play} alt="International Design Group" />
-                </a>
+                <img src={Wfl} alt="World Football Legends" style={{width: '100%'}} />
               </div>
             </Fade>
             <Fade right>
