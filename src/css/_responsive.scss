@@ -312,9 +312,6 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
     margin-bottom: 5em;
   }
   footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     flex-direction: row;
     .copyright {
       width: 70%;
@@ -427,13 +424,12 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
   }
   .events-container {
     grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(3, 400px);
-    grid-template-areas: "eventsItem1 eventsItem2 eventsItem2" "eventsItem3 eventsItem2 eventsItem2"
-    "eventsItem4 . .";
+    grid-template-rows: repeat(2, 400px);
+    grid-template-areas: "eventsItem1 eventsItem2 eventsItem2" "eventsItem3 eventsItem4 eventsItem5";
   }
-  .events-item-2 {
-    padding: 3em;
-  }
+  // .events-item-2 {
+  //   padding: 3em;
+  // }
   .testimonial-container {
     max-width: 1280px;
   }

@@ -156,6 +156,32 @@ code {
   transition: transform 1s ease;
 }
 
+
+// ANNOUNCEMENT POP UP BOX
+
+.announcement-container {
+  width: 100%;
+  padding: 2em;
+  background: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  p {
+    font-style: italic;
+  }
+}
+.close-button {
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+}
 // HOME PAGE
 
 .container {
@@ -710,10 +736,11 @@ footer {
     "eventsItem1"
     "eventsItem2"
     "eventsItem3"
-    'eventsItem4';
+    'eventsItem4'
+    'eventsItem5';
   justify-content: center;
 }
-@for $i from 1 through 4 {
+@for $i from 1 through 5 {
   .events-item-#{$i} {
     grid-area: eventsItem#{$i};
   }
@@ -740,9 +767,16 @@ footer {
   .sos {
     width: 100%;
   }
-  .olympics {
-    height: 60%;
-  }
+}
+.events-item-5 {
+  padding: 2em 1em;;
+}
+.aqaba {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // TESTIMONIALS COMPONENT 
@@ -894,20 +928,15 @@ footer {
   }
 }
 .our-partners-item-7 {
-  p {
-    margin-top: 1em;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .our-partners-item-8 {
-  border: solid 10px $color-6;
-  font-family: $heading-font;
-  font-size: 2em;
-  font-weight: bold;
-  text-align: center;
-  a {
-    color: $color-6;
-    text-decoration: none;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -965,10 +994,24 @@ footer {
   margin-bottom: 0.5em;
 }
 
+// AQABA COMPONENT
+
+.aqaba-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    text-align: center;
+  }
+}
+
 // TIRANA EVENT COMPONENT 
 
 .tirana-event {
   margin: 6em auto 0 auto;
+
 }
 .tab-list {
   display: flex;
@@ -1143,8 +1186,7 @@ footer {
 .testimonials-button,
 .partners-button,
 .contact-button,
-.our-partners-item-5,
-.our-partners-item-8 {
+.our-partners-item-5 {
   &:hover,
   &:focus {
     box-shadow: $hoverShadow;
