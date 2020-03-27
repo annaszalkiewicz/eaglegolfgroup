@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import Sos from "../img/sos.png";
-import Olympics from "../img/special-olympics.png";
+import Embassy from "../img/jordanian-embassy.png";
+import Aqaba from '../img/aqaba-seza.jfif';
 import Fade from "react-reveal/Fade";
 import MetaTags from "react-meta-tags";
 
@@ -29,56 +28,39 @@ class Events extends Component {
                 Event for the former Aston Villa and Celtic club captain and
                 captain of Bulgaria - Stiliyan Petrov in May 2013 Eagle Golf
                 Group are extremely honoured and proud to announce other charity
-                tour event for May 2019. The Management Team of Eagle Golf are
-                currently working hard in partnership with The National Culture
-                and Tourist Board of Albania and together with both Governments
-                for a magnificent charity Football event in Albania. We are delighted to confirm the dates for this magnificent event are 30 May – 02 June 2019. The event has been
-                already endorsed and supported by both Albanian and British Ambassadors together with Government dignitaries.
+                tour event. The Management Team of Eagle Golf are
+                currently working hard in partnership with both British and Jordanian Governments to present our next spectacular event coming soon in Aqaba, Jordan. We envisage that Jordanian football federation will support this magnificent event. We hope it will be endorsed and supported by both British and Jordanian Ambassadors together with Government dignitaries.
+              </p>
+              
+              <p>
+                This magnificent good cause charity football/golf event will be announced once we have the all clear and green light from the World Health Organization.
               </p>
               <p>
-                Furthermore, we have had an endorsement of approval and support
-                from The Football Federation of Albania. The core purpose and main
-                goal of this charity event is to raise funds for The SOS
-                Orphanage Children of Albania and The Special Olympics Albania.
-                We also envisage to invite the global mega super star to join in
-                this magnificent charity event to sing in the national stadium.
-              </p>
-              <p>
-                This magnificent good cause charity football event will be
-                schedule around the opening of the new and spectacular national
-                football stadium recently been endorsed by UEFA.
-              </p>
-              <p>
-                The charity football match will be against Former Albanian
-                Legends X1 v Former England Legends X1.
-              </p>
-              <p>
-                We are also organising a magnificent Gala Dinner Presentation
-                for the Albanian event which we are honoured will be hosted by
-                The Mayor and Municipality of Tirana. The Gala Dinner Presentation will be held at the prestigous 5 star Tirana Plaza Hotel.
-              </p>
-              <p>
-                Further information how to book and join these unique charity
-                events and meet your football heroes will be announced in March
-                2019.
+                The charity football match will be against former England Legends X1 vs. former Jordanian Legends XI.
               </p>
             </div>
           </Fade>
           <Fade left delay={500}>
             <div className="grid-item events-item-3">
-              <img src={Sos} alt="SOS Children's Villages" className="sos" />
-              <img
-                src={Olympics}
-                alt="Special Olympics Albania"
-                className="olympics"
-              />
+              <img src={Embassy} alt="Jordanian Embassy" className="sos" />
             </div>
           </Fade>
           <Fade left delay={600}>
-            <div className="grid-item events-item-4 event-button">
-              <Link to="/albania-charity-football-event-2019" role="button">
-              Learn more about our next event
-              </Link>
+            <div className="grid-item events-item-4 aqaba">
+              <img src={Aqaba} alt="Aqaba Special Economic Zone" />
+            </div>
+          </Fade>
+          <Fade right>
+            <div className="grid-item events-item-5">
+              <p>
+                We are also organising a magnificent Gala Dinner Presentation
+                for the Jordanian event which we are honoured will be hosted by Aqaba Tourism and Economic Authority.
+                The Gala Dinner Presentation will be held at the prestigous 5 star Hyatt Regency Hotel.
+              </p>
+              <p>
+                Further information how to book and join this unique charity
+                event and meet your football heroes will be announced in October 2020.
+              </p>
             </div>
           </Fade>
         </main>

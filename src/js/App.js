@@ -66,13 +66,12 @@ class App extends Component {
           path={process.env.PUBLIC_URL + "/contact"}
           render={() => <Contact />}
         />
-
+{/* 
         <Route
-        exact
           path={process.env.PUBLIC_URL + "/albania-charity-football-event-2019"}
         >
           <Redirect to="/jordan-charity-football-golf-event" />
-        </Route>
+        </Route> */}
 
         <Route
           path={process.env.PUBLIC_URL + "/jordan-charity-football-golf-event"}

@@ -10,8 +10,8 @@ class ContactForm extends Component {
 
   onHandleSubmit = e => {
     e.preventDefault();
-    const firstName = document.getElementById("first-name").value;
-    const lastName = document.getElementById("last-name").value;
+    const firstName = document.getElementById("name").value;
+    const lastName = document.getElementById("surname").value;
     const email = document.getElementById("email").value;
     const tel = document.getElementById("telephone").value;
     const message = document.getElementById("message").value;
@@ -44,7 +44,7 @@ class ContactForm extends Component {
       <form
         className="contact-form"
         id="contact-form"
-        onClick={this.onHandleSbumit}
+        onSubmit={this.onHandleSubmit}
         method="POST"
         action="/send"
       >
