@@ -67,7 +67,7 @@ class Partners extends Component {
 						</a>
 					</button>
 				</Fade>
-				<Fade left delay={300}>
+				{/* <Fade left delay={300}>
 					<div className='grid-item our-partners-item-6'>
 						<img src={Wfl} alt='World Football Legends' />
 					</div>
@@ -96,7 +96,7 @@ class Partners extends Component {
 							and Louis Saha
 						</p>
 					</div>
-				</Fade>
+				</Fade> */}
 			</main>
 		);
 	}

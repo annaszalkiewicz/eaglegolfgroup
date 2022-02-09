@@ -199,7 +199,7 @@ main {
   display: grid;
   justify-content: center;
   grid-template-columns: 300px;
-  grid-template-rows: 300px 560px repeat(15, 300px) 560px repeat(8, 300px);
+  grid-template-rows: 300px auto repeat(10, 300px) 560px repeat(7, 300px);
   grid-template-areas:
     "homeLogo"
     "homeIntro"
@@ -212,17 +212,17 @@ main {
     "goalsItem6"
     "goalsItem7"
     "goalsItem8"
-    "eventsHeader"
-    "eventItem1"
-    "eventItem2"
-    "eventItem3"
-    "eventItem4"
+    // "eventsHeader"
+    // "eventItem1"
+    // "eventItem2"
+    // "eventItem3"
+    // "eventItem4"
     "testimonialsHeader"
     "testimonialsItem1"
     "testimonialsButton"
     "partnersItem1"
     "partnersItem2"
-    "partnersItem3"
+    // "partnersItem3"
     "partnersItem4"
     "contactItem1"
     "contactItem2"
@@ -764,9 +764,7 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   padding: 1em;
-  .sos {
-    width: 100%;
-  }
+
 }
 .events-item-5 {
   padding: 2em 1em;;
@@ -777,6 +775,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1em;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 // TESTIMONIALS COMPONENT 
@@ -882,17 +885,17 @@ footer {
   display: grid;
   margin: 15vh auto 0 auto;
   grid-template-columns: 300px;
-  grid-template-rows: repeat(3, 300px) 460px repeat(2, 300px) 450px 300px;
+  grid-template-rows: repeat(3, 300px) 460px 300px;
   grid-gap: 1em;
   grid-template-areas:
     "ourPartnersItem1"
     "ourPartnersItem2"
     "ourPartnersItem3"
     "ourPartnersItem4"
-    "ourPartnersItem5"
-    "ourPartnersItem6"
-    "ourPartnersItem7"
-    "ourPartnersItem8";
+    "ourPartnersItem5";
+    // "ourPartnersItem6"
+    // "ourPartnersItem7"
+    // "ourPartnersItem8";
   justify-content: center;
 }
 .our-partners-item-1 {

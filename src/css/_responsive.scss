@@ -109,21 +109,23 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
   .grid-container {
     width: 100%;
     grid-template-columns: repeat(2, 300px);
-    grid-template-rows: repeat(10, 300px) auto repeat(4, 300px);
+    // grid-template-rows: repeat(10, 300px) auto repeat(4, 300px);
+    grid-template-rows: repeat(2, 300px) auto repeat(5, 300px) auto repeat(4, 300px);
     grid-template-areas:
       "homeLogo homeIntro"
       "goalsHeader homeIntro"
+      "goalHeader homeIntro"
       "goalsItem1 goalsItem2"
       "goalsItem3 goalsItem4"
       "goalsItem5 goalsItem6"
       "goalsItem7 goalsItem8"
-      "eventsHeader eventItem1"
-      "eventItem2 eventItem1"
-      "eventItem3 eventItem4"
+      // "eventsHeader eventItem1"
+      // "eventItem2 eventItem1"
+      // "eventItem3 eventItem4"
       "testimonialsHeader testimonialsButton"
       "testimonialsItem1 testimonialsItem1"
       "partnersItem1 partnersItem2"
-      "partnersItem3 partnersItem4"
+      "partnersItem4 partnersItem4"
       "contactItem1 contactItem2"
       "contactItem3 contactItem3";
   }
@@ -216,14 +218,15 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
   .grid-container {
     width: 100%;
     grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(9, 300px);
+    grid-template-rows: 300px auto repeat(6, 300px);
     grid-template-areas:
+      "homeLogo homeIntro homeIntro"
       "homeLogo homeIntro homeIntro"
       "goalsHeader goalsItem1 goalsItem2"
       "goalsItem3 goalsItem4 goalsItem5"
       "goalsItem6 goalsItem7 goalsItem8"
-      "eventsHeader eventItem1 eventItem1"
-      "eventItem2 eventItem3 eventItem4"
+      // "eventsHeader eventItem1 eventItem1"
+      // "eventItem2 eventItem3 eventItem4"
       "testimonialsButton testimonialsItem1 testimonialsItem1"
       "partnersItem2 partnersItem3 partnersItem4"
       "contactItem1 contactItem2 contactItem3";
@@ -273,12 +276,12 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
   }
   .our-partners-container {
     grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 300px) auto;
+    grid-template-rows: repeat(2, 300px);
     grid-template-areas:
       "ourPartnersItem1 ourPartnersItem2 ourPartnersItem3"
-      "ourPartnersItem4 ourPartnersItem4 ourPartnersItem5"
-      "ourPartnersItem6 ourPartnersItem7 ourPartnersItem8"
-      ".  ourPartnersItem7 .";
+      "ourPartnersItem4 ourPartnersItem4 ourPartnersItem5";
+      // "ourPartnersItem6 ourPartnersItem7 ourPartnersItem8"
+      // ".  ourPartnersItem7 .";
   }
   .contact-container {
     grid-template-columns: repeat(3, 300px);
@@ -385,7 +388,19 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
   .grid-container {
     width: 100%;
     grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(9, 400px);
+    grid-template-rows: repeat(7, 400px);
+    // grid-template-rows: 300px auto repeat(6, 300px);
+    grid-template-areas:
+      "homeLogo homeIntro homeIntro"
+      // "homeLogo homeIntro homeIntro"
+      "goalsHeader goalsItem1 goalsItem2"
+      "goalsItem3 goalsItem4 goalsItem5"
+      "goalsItem6 goalsItem7 goalsItem8"
+      // "eventsHeader eventItem1 eventItem1"
+      // "eventItem2 eventItem3 eventItem4"
+      "testimonialsButton testimonialsItem1 testimonialsItem1"
+      "partnersItem2 partnersItem3 partnersItem4"
+      "contactItem1 contactItem2 contactItem3";
   }
   .home-container {
     img {
@@ -453,11 +468,10 @@ Fix for Pixel 2, Pixel 2 XL and iPnone X and portrait orientation
   }
   .our-partners-container {
     grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(3, 400px);
+    grid-template-rows: repeat(2, 400px);
     grid-template-areas:
       "ourPartnersItem1 ourPartnersItem2 ourPartnersItem3"
-      "ourPartnersItem4 ourPartnersItem4 ourPartnersItem5"
-      "ourPartnersItem6 ourPartnersItem7 ourPartnersItem8";
+      "ourPartnersItem4 ourPartnersItem4 ourPartnersItem5";
   }
   .our-partners-item-3,
   .our-partners-item-4 {

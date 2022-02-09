@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Redirect } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import Home from "./Home";
@@ -47,10 +47,10 @@ class App extends Component {
           render={() => <Ethos />}
         />
 
-        <Route
+        {/* <Route
           path={process.env.PUBLIC_URL + "/events"}
           render={() => <Events />}
-        />
+        /> */}
 
         <Route
           path={process.env.PUBLIC_URL + "/testimonials"}
@@ -66,12 +66,6 @@ class App extends Component {
           path={process.env.PUBLIC_URL + "/contact"}
           render={() => <Contact />}
         />
-{/* 
-        <Route
-          path={process.env.PUBLIC_URL + "/albania-charity-football-event-2019"}
-        >
-          <Redirect to="/jordan-charity-football-golf-event" />
-        </Route> */}
 
         <Route
           path={process.env.PUBLIC_URL + "/jordan-charity-football-golf-event"}

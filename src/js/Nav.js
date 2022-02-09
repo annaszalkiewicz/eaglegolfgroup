@@ -13,7 +13,7 @@ class Nav extends Component {
               Home
             </NavLink>
             <NavLink to="/ethos">Our Ethos</NavLink>
-            <NavLink to="/events">Events</NavLink>
+            {/* <NavLink to="/events">Events</NavLink> */}
             <NavLink to="/testimonials">Testimonials</NavLink>
             <NavLink to="/partners">Our Partners</NavLink>
             <NavLink to="/contact">Contact Us</NavLink>
@@ -25,7 +25,7 @@ class Nav extends Component {
               Home
             </NavLink>
             <NavLink to="/ethos">Our Ethos</NavLink>
-            <NavLink to="/events">Events</NavLink>
+            {/* <NavLink to="/events">Events</NavLink> */}
             <NavLink to="/testimonials">Testimonials</NavLink>
             <NavLink to="/partners">Our Partners</NavLink>
             <NavLink to="/contact">Contact Us</NavLink>
