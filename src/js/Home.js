@@ -8,10 +8,7 @@ import Golf from '../img/golf-icon.svg';
 import Dolar from '../img/monetization-icon.svg';
 import Tv from '../img/tv-icon.svg';
 import World from '../img/world-icon.svg';
-import Wfl from '../img/wfl.jpg';
 import Idg from '../img/idg.png';
-// import Hotel from '../img/Hyatt-Regency-Aqaba.jpg';
-// import Stadium from '../img/aqaba-football-stadium.jpg';
 import Logo from '../img/logo.svg';
 import LogoWhiteReversed from '../img/logo-white-reversed.svg';
 import ContactDetails from './ContactDetails';
@@ -97,9 +94,6 @@ class Home extends Component {
 									director level in the travel promotion industry for over 50
 									years. We conduct regular road show events with our clients,
 									promoting new Golf Resort destinations.
-								</p>
-								<p>
-									In addition, our management team are proud to announce that with the England Football Legends we envisage that spectacular event in Saudi Arabia for October 2022.
 								</p>
 							</div>
 						</Fade>

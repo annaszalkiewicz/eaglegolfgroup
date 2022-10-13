@@ -4,7 +4,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Home from "./Home";
 import Ethos from "./Ethos";
-import Events from "./Events";
 import Testimonials from "./Testimonials";
 import Partners from "./Partners";
 import Contact from "./Contact";
