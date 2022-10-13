@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import MetaTags from 'react-meta-tags';
 import Idg from '../img/idg.png';
-import Wfl from '../img/wfl.jpg';
 import Fade from 'react-reveal/Fade';
 
 class Partners extends Component {
