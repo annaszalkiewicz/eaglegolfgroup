@@ -14,10 +14,12 @@ import LogoWhiteReversed from '../img/logo-white-reversed.svg';
 import ContactDetails from './ContactDetails';
 import TestimonialsShort from './TestimonialsShort';
 import Fade from 'react-reveal/Fade';
+import Bye from './Bye';
 
 class Home extends Component {
 	constructor(props) {
 		super(props);
+
 		this.onLeftArrowClick = this.onLeftArrowClick.bind(this);
 		this.onRightArrowClick = this.onRightArrowClick.bind(this);
 	}
@@ -68,6 +70,7 @@ class Home extends Component {
 						</Link>
 					</Fade>
 				</div>
+				<Bye />
 				<main>
 					<div className='grid-container' id='main-content'>
 						<Fade left>
@@ -264,3 +267,4 @@ class Home extends Component {
 }
 
 export default Home;
+
